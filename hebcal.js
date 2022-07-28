@@ -21,53 +21,54 @@
 
 function month() {
 
-  var weekday = new Intl.DateTimeFormat('en-u-ca-hebrew', { weekday: 'long' }).format(new Date());
-  var year = new Intl.DateTimeFormat('en-u-ca-hebrew', { year: 'numeric' }).format(new Date());
-  var month = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'long' }).format(new Date());
-  var day = new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric' }).format(new Date());
+var weekday = new Intl.DateTimeFormat('en-u-ca-hebrew', { weekday: 'long' }).format(new Date());
+var year = new Intl.DateTimeFormat('en-u-ca-hebrew', { year: 'numeric' }).format(new Date());
+var month = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'long' }).format(new Date());
+var day = new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric' }).format(new Date());
 
-  console.log("Today is " + weekday + ", the "+ day + " of " + month +", " + year)
+
+  console.log("Today is " + weekday + ", the " + day + " of " + month + ", " + year)
 
   if (month == "Tishri") {
     $('.Tishrei').css('display', 'block')
-        console.log("works");
-  }else if (month == "Heshvan"){
+    console.log("Have a great day!")
+  } else if (month == "Heshvan") {
     $('.Cheshvan').css('display', 'block')
-    console.log("works");
-  }else if (month == "Kislev"){
+    console.log("Have a great day!")
+  } else if (month == "Kislev") {
     $('.Kislev').css('display', 'block')
-    console.log("works");
-  }else if (month == "Tevet"){
+    console.log("Have a great day!")
+  } else if (month == "Tevet") {
     $('.Teves').css('display', 'block')
-    console.log("works");
-  }else if (month == "Shevat"){
+    console.log("Have a great day!")
+  } else if (month == "Shevat") {
     $('.Shevat').css('display', 'block')
-    console.log("works");
-  }else if (month == "Adar I"){
+    console.log("Have a great day!")
+  } else if (month == "Adar I") {
     $('.AdarAleph').css('display', 'block')
-    console.log("works");
-  }else if (month == "Adar"){
+    console.log("Have a great day!")
+  } else if (month == "Adar") {
     $('.Adar').css('display', 'block')
-    console.log("works");
-  }else if (month == "Nisan"){
+    console.log("Have a great day!")
+  } else if (month == "Nisan") {
     $('.Nissan').css('display', 'block')
-    console.log("works");
-  }else if (month == "Iyar"){
+    console.log("Have a great day!")
+  } else if (month == "Iyar") {
     $('.Iyar').css('display', 'block')
-    console.log("works");
-  }else if (month == "Sivan"){
+    console.log("Have a great day!")
+  } else if (month == "Sivan") {
     $('.Sivan').css('display', 'block')
-    console.log("works");
-  }else if (month == "Tamuz"){
+    console.log("Have a great day!")
+  } else if (month == "Tamuz") {
     $('.Tamuz').css('display', 'block')
-    console.log("works");
-  }else if (month == "Av"){
+    console.log("Have a great day!")
+  } else if (month == "Av") {
     $('.Av').css('display', 'block')
-    console.log("works");
-  }else if (month == "Elul"){
+    console.log("Have a great day!")
+  } else if (month == "Elul") {
     $('.Av').css('display', 'block')
-    console.log("works");
-  }else{
-    console.log("error - js if statement broke")
+    console.log("Have a great day!")
+  } else {
+    console.log("error - js if-statement broke")
   }
 }
