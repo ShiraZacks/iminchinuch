@@ -1,0 +1,579 @@
+/*
+* Main color : #f44336   pink/red/tomato
+* Other main color : white 
+* Secondary color : #757575  gray   #757575
+* Other secondary color : #adbfff   gray blue
+*/
+
+/* blue and silver/gray */
+
+html,body{
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    width:100%;
+    display: block;
+    overflow-x: hidden; 
+}
+
+/*topBar*/
+.topBar{
+    z-index: 0;
+    top:0px;
+    left: 0pt;
+    display:inline-block;
+    overflow:clip;
+    background-color: #f44336;
+    width:100%;
+    height: 68px;
+    white-space: normal;
+    position:fixed;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+        /*buttons on menu*/
+.buttons{ 
+    vertical-align: middle;
+    line-height: 60px;    
+    color:white;
+    cursor:pointer;
+    word-wrap: normal;
+    text-align: center;
+    padding: 30px ;
+    text-decoration: none !important;
+    }
+        /*hover button on menu*/
+a.buttons:hover{
+    color:#f44336;
+    background-color: white;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*STUFF FOR LITTLE SCREEN*/
+.smaller{
+    z-index: 1;
+    display: none;
+    top: 10px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom:0px; 
+}
+        /*responsive screen size*/
+@media only screen and (max-width:992px){ [class*="buttons"]{
+    display: none;}
+    [class*="smaller"]{
+        display: block;}
+}
+        /*little screen menu*/
+.hide{
+    display:none
+}
+.show{
+    margin-top: 50px;
+    position: fixed;
+    display:block;
+    z-index: 1;
+}
+
+.titanic{
+    float: none;
+}
+
+.button{ 
+    background-color: #f44336;
+    color:white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    cursor:pointer;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    align-self:right;
+    text-decoration: none !important;
+    padding: 15px;
+    }
+
+.bottom{
+    border-bottom: 3px solid white;
+}
+.top{
+    border-top: 3px solid white;
+}
+a.button:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    color: #f44336;
+    border-color: #f44336;
+}
+
+/* header sizings*/
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+
+/* HEADER BIG BOX */
+.header{
+    padding:150px 15px;
+    background-color:#f44336;
+    margin-right: 15px;
+    text-align: center;
+    color: white;
+}
+.headerPic{
+    border-radius: 50%;
+    height: 120pt;
+    width: 120pt;
+}
+.bigHeader{
+margin:16px;
+font-size:64px;
+}
+.middleHeader{
+    font-size:24px;
+}
+.littleHeader{
+    font-size: 16pt;
+}
+
+/* first set */
+.firstMain{
+    padding:0 8px;
+    padding-top: 64px;
+    padding-bottom:64px;
+    float:left;
+    width:100%;
+}
+.firstTop{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
+}
+.firstHeader{
+    float:left;
+    width:66.66666%;
+    padding: 0px 8px;
+}
+.firstBold{
+    padding-top:32px;
+    padding-bottom:32px;
+}
+.firstSmall{
+    color:#757575;
+}
+
+/* BORDER MIDDLE SEPARATING */
+hr{
+    width:75%;    
+    float:center;
+    border-style: hidden;
+    border-top: 15px dotted !important;
+    color:#f44336;
+
+}
+
+/* second set */
+.secondMain{
+    padding:0 8px;
+    padding-top: 64px;
+    padding-bottom:64px;
+    float:left;
+    width:100%;
+    background-color:#ff9a9a;
+}
+.secondTop{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
+}
+.secondHeader{
+    float:left;
+    width:66.66666%;
+    padding: 0px 8px;
+}
+.secondBold{
+    padding-top:32px;
+    padding-bottom:32px;
+}
+.secondSmall{
+    color:#757575;
+}
+
+/*bottom bar*/
+.bottomBar{
+    width:100%;
+    padding:25px;
+    background-color: #f44336;
+    opacity: 60%;
+    display:block;
+    text-align: center;
+}
+.bottomWords{
+    margin:16px;
+    font-size: 24px;
+    color:white
+}
+.footer{
+    width: 100%;
+    z-index: 0;
+    left:10px;
+    margin-top: auto;
+}
+
+/* for sub-pages */
+
+.header2{
+    padding:100px 15px;
+    background-color:#f44336;
+    margin-right: 15px;
+    text-align: center;
+    color: white;
+}
+.bigHeader2{
+    margin:16px;
+    font-size:64px;
+}
+.firstMain2{
+    padding:0 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    float:left;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;}
+.firstBold2{
+    padding-top:32px;
+    padding-bottom:32px;
+}
+.firstSmall2{
+    color:#757575;
+}
+/*
+* stuff that hopefully will work- 
+* classes to make stuff hidden or visible,
+* depending on if its that week/month/yontif or not
+*
+* https://stackoverflow.com/questions/22576927/how-to-dynamically-change-css-class-of-an-html-tag
+*
+* visibility:hidden takes out the stuff but keeps the space there,
+* display:none won't leave the space.
+* Keep it with display:none cuz otherwise the space will still be there
+* and that would just be awkward
+*
+*it needs individual classes, otherwise it will change all of them
+*/
+
+/*
+* Months
+*/
+.Tishrei{
+    display:none;
+}
+.Cheshvan{
+    display:none;
+}
+.Kislev{
+    display:none;
+}
+.Teves{
+    display:none;
+}
+.Shevat{
+    display:none;
+}
+.AdarAleph{
+    display:none;
+}
+.Adar{
+    display:none;
+}
+.Nissan{
+    display:none;
+}
+.Iyar{
+    display:none;
+}
+.Sivan{
+    display:none;
+}
+.Tamuz{
+    display:none;
+}
+.Av{
+    display:none;
+}
+.Elul{
+    display:none;
+}
+
+
+/*
+* Parshiyos
+*/
+.Bereshis{
+    display:none;
+}
+.Noach{
+    display:none;
+}
+.LechLecha{
+    display:none;
+}
+.Vayera{
+    display:none;
+}
+.ChayeiSara{
+    display:none;
+}
+.Toldos{
+    display:none;
+}
+.Vayetzei{
+    display:none;
+}
+.Vayishlach{
+    display:none;
+}
+.Vayeshev{
+    display:none;
+}
+.Miketz{
+    display:none;
+}
+.Vayigash{
+    display:none;
+}
+.Vayechi{
+    display:none;
+}
+.Shemos{
+    display:none;
+}
+.Vaera{
+    display:none;
+}
+.Bo{
+    display:none;
+}
+.Nijna{
+    display:none;
+    color: black;
+}
+.Beshalach{
+    display:none;
+}
+.Yisro{
+    display:none;
+}
+.Mishpatim{
+    display:none;
+}
+.Terumah{
+    display:none;
+}
+.Tetzaveh{
+    display:none;
+}
+.KiSisa{
+    display:none;
+}
+.Vayakhel{
+    display:none;
+}
+.Pekudei{
+    display:none;
+}
+.Vayikra{
+    display:none;
+}
+.Tzav{
+    display:none;
+}
+.Shmini{
+    display:none;
+}
+.Tazria{
+    display:none;
+}
+.Metzora{
+    display:none;
+}
+.AchreiMos{
+    display:none;
+}
+.Kedoshim{
+    display:none;
+}
+.Emor{
+    display:none;
+}
+.Behar{
+    display:none;
+}
+.Bechukosai{
+    display:none;
+}
+.Bamidbar{
+    display:none;
+}
+.Naso{
+    display:none;
+}
+.Bahaloscha{
+    display:none;
+}
+.Shlach{
+    display:none;
+}
+.Korach{
+    display:none;
+}
+.Chukas{
+    display:none;
+}
+.Balak{
+    display:none;
+}
+.Pinchas{
+    display:none;
+}
+.Matos{
+    display:none;
+}
+.Masei{
+    display:none;
+}
+.Devarim{
+    display:none;
+}
+.Vaeschanan{
+    display:none;
+}
+.Eikev{
+    display:none;
+}
+.Reeh{
+    display:none;
+}
+.Shoftim{
+    display:none;
+}
+.KiSeitzei{
+    display:none;
+}
+.KiSavo{
+    display:none;
+}
+.Nitzavim{
+    display:none;
+}
+.Vayeilech{
+    display:none;
+}
+.HaAzinu{
+    display:none;
+}
+.VezosHabrachah{
+    display:none;
+}
+/*
+* Double Parshiyos
+*/
+.Vayakhel-Pekudei{
+    display:none;
+}
+.Tazria-Metzora{
+    display:none;
+}
+.AchreiMos-Kedoshim{
+    display:none;
+}
+.Behar-Bechukosai{
+    display:none;
+}
+.Chukas-Balak{
+    display:none;
+}
+.Matos-Masei{
+    display:none;
+}
+.Nitzavim-Vayeilech{
+    display:none;
+}
+
+/*
+* Yontifs
+*/
+.Purim{
+    display:none;
+}
+.Pesach{
+    display:none;
+}
+.Shavuos{
+    display:none;
+}
+.RoshHashana{
+    display:none;
+}
+.YomKippur{
+    display:none;
+}
+.Sukkos{
+    display:none;
+}
+.Sukkos2{
+    display:none;
+}
+.Chanukah{
+    display:none;
+}
+.PesachSheini{
+    display:none;
+}
+.LagBaomer{
+    display:none;
+}
+.ThreeWeeks{
+    display:none;
+}
+.TuBav{
+    display:none;
+}
+.TuBishvat{
+    display:none;
+}
+.TishaBav{
+    display:none;
+}
+.AsarahBeteves{
+    display:none;
+}
+.NineDays{
+    display:none;
+}
+.ShushanPurim{
+    display:none;
+}
+.TzomGedalia{
+    display:none;
+}
+.TaanisEsther{
+    display:none;
+}
+.Chanukah{
+    display:none;
+}
+.Chanukah{
+    display:none;
+}
+.Chanukah{
+    display:none;
+}
+.Chanukah{
+    display:none;
+}
