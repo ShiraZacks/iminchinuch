@@ -2,3 +2,4 @@
 function myFunction() {
     var thing = document.getElementById("smallScreen").classList.toggle("show");}
 
+
