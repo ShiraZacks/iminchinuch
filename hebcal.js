@@ -1,5 +1,5 @@
 //getElementByClassName can't change css
-//use jQuery
+
 
 /*
 [
