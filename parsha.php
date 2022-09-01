@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<h3>This page is under construction. Sorry!!</h3>
 
     <!-- all the parshiyos go here, all with div class of their parsha so i can make things work in js -->
 
