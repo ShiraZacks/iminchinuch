@@ -66,7 +66,7 @@ var day = new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric' }).format(n
     $('.Av').css('display', 'block')
     console.log("Have a great day!")
   } else if (month == "Elul") {
-    $('.Av').css('display', 'block')
+    $('.Elul').css('display', 'block')
     console.log("Have a great day!")
   } else {
     console.log("error - js if-statement broke")
