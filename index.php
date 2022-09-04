@@ -26,9 +26,7 @@
     <!-- First section of text -->
     <div class="firstSmall">
         <!-- today's date -->
-        <!--Start MyZmanim Widget for: https://iminchinuch.herokuapp.com/  -->
-        <script type="text/javascript" charset="UTF-8" language="javascript" src="https://www.myzmanim.com/widget.aspx?lang=en&mode=CandlesOnly&fsize=12&fcolor=f44336&bcolor=f44336&suf=s&key=oemDHmhHjMIzKzgvjacxn6n7DtZbV9WcOknBZ%2b%2fQrNt9%2bl7VvsBY9MxMagxAVoHxaBmjN9Nn3FL90m6QUto5NdGhivm1Y4RaIsfy3%2fvj%2fnqVGj2j84kXN17AQ%2bVngL93"></script>
-        <!--End MyZmanim Widget-->
+
 
 
         <h2 id="hebrewDate"></h2>
