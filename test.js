@@ -1,5 +1,5 @@
 function monthname(){
-  var month1 = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'long' }).format(new Date());
+  var month1 = new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric', month: 'long' , year: 'numeric'}).format(new Date());
 
   console.log(month1)
 /*

@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body onload="todayNow()">
     <!-- Header -->
     <header class="header">
         <h1 class="bigHeader">I'M IN CHINUCH</h1>
@@ -50,13 +50,7 @@
                 <div class="secondHeader">
                     <h1>Recent Updates</h1>
                     <h5 class="secondBold">Looked at a calendar recently? </h5>
-                    <div id="hebcal" onload="shira()"></div>
-
-
-                    <p class="secondSmall">This week's Parsha is .</p>
-                    <p class="secondSmall">This month is .</p>
-                    <p class="secondSmall">The next Yom Tov is .</p>
-                </div>
+                    <p id="date" class="secondSmall"></p>
             </div>
         </div>
         <hr>

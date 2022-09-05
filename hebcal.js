@@ -1,6 +1,11 @@
 //getElementByClassName can't change css
-
-
+function todayNow() {
+  var todayDay =  new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric'}).format(new Date());
+  var todayMonth =  new Intl.DateTimeFormat('en-u-ca-hebrew', {month: 'long'}).format(new Date());
+  var todayYear =  new Intl.DateTimeFormat('en-u-ca-hebrew', {year: 'numeric'}).format(new Date());
+  document.getElementById("date").innerText = "Today is " + todayDay +" " + todayMonth + ", " + todayYear + ".";
+  console.log(todayDay + todayMonth + todayYear)
+}
 /*
 [
   "Tishri",
