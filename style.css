@@ -1,12 +1,9 @@
 /*
-* Main color : #f44336   pink/red/tomato
-* Other main color : white 
-* Secondary color : #757575  gray   #757575
-* Other secondary color : #adbfff   gray blue
+* main color: #f44336
+* secondary color: #757575
+* third color: #ff9a9a
+* 
 */
-
-/* blue and silver/gray */
-
 html,body{
     font-family:Verdana,sans-serif;
     font-size:15px;

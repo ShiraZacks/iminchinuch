@@ -51,6 +51,7 @@
                     <h1>Recent Updates</h1>
                     <h5 class="secondBold">Looked at a calendar recently? </h5>
                     <p id="date" class="secondSmall"></p>
+                </div>
             </div>
         </div>
         <hr>
