@@ -18,6 +18,11 @@
 
     <!-- First section of text -->
 
+    <?php
+    //get data from mysql? i could, or i could continue with what i have under here just without cupcake stuff but regular.
+    ?>
+
+
     <!-- Tishrei -->
     <div class="Tishrei">
         <div class="header2">
