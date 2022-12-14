@@ -1,64 +1,61 @@
 var monthName;
 var monthWord = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'long' }).format(new Date());
-var monthNumber = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'narrow' }).format(new Date());
+var monthNumber = Number(new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'narrow' }).format(new Date()))
 
 
 function month() {
 
 
-  if (monthWord == "Adar II") {
-    monthName = "Adar Sheini"
-  } else {
     switch (monthNumber) {
       case 1:
         monthName = "Tishrei"
         break;
       case 2:
-        monthName = "Tishrei"
+        monthName = "Cheshvan"
         break;
       case 3:
-        monthName = "Tishrei"
+        monthName = "Kislev"
         break;
       case 4:
-        monthName = "Tishrei"
+        monthName = "Teves"
         break;
       case 5:
-        monthName = "Tishrei"
+        monthName = "Shevat"
         break;
       case 6:
-        monthName = "Tishrei"
+        monthName = "Adar I"
         break;
       case 7:
-        monthName = "Tishrei"
+        monthName = "Adar"
         break;
       case 8:
-        monthName = "Tishrei"
+        monthName = "Nisan"
         break;
       case 9:
-        monthName = "Tishrei"
+        monthName = "Iyar"
         break;
       case 10:
-        monthName = "Tishrei"
+        monthName = "Sivan"
         break;
       case 11:
-        monthName = "Tishrei"
+        monthName = "Tamuz"
         break;
       case 12:
-        monthName = "Tishrei"
+        monthName = "Av"
         break;
       case 13:
-        monthName = "Tishrei"
+        monthName = "Elul"
         break;
 
-      default:
+      default: monthName = "something went wrong"
         break;
-    }
-  };
+    };
+
 
 
   console.log(monthNumber);
   console.log(monthWord);
-
+  console.log(monthName);
   /*
   [
     "Tishri",
