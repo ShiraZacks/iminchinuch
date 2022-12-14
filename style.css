@@ -4,217 +4,268 @@
 * third color: #ff9a9a
 * 
 */
-html,body{
-    font-family:Verdana,sans-serif;
-    font-size:15px;
-    line-height:1.5;
-    width:100%;
-    display: block;
-    overflow-x: hidden; 
+
+:root {
+    --hide: none;
+    --view: block;
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    display: var(--view);
+    overflow-x: hidden;
 }
 
 /*topBar*/
-.topBar{
+.topBar {
     z-index: 0;
-    top:0px;
+    top: 0px;
     left: 0pt;
-    display:inline-block;
-    overflow:clip;
+    display: inline-block;
+    overflow: clip;
     background-color: #f44336;
-    width:100%;
+    width: 100%;
     height: 68px;
     white-space: normal;
-    position:fixed;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    position: fixed;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-        /*buttons on menu*/
-.buttons{ 
+
+/*buttons on menu*/
+.buttons {
     vertical-align: middle;
-    line-height: 60px;    
-    color:white;
-    cursor:pointer;
+    line-height: 60px;
+    color: white;
+    cursor: pointer;
     word-wrap: normal;
     text-align: center;
-    padding: 30px ;
+    padding: 30px;
     text-decoration: none !important;
-    }
-        /*hover button on menu*/
-a.buttons:hover{
-    color:#f44336;
+}
+
+/*hover button on menu*/
+a.buttons:hover {
+    color: #f44336;
     background-color: white;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*STUFF FOR LITTLE SCREEN*/
-.smaller{
+.smaller {
     z-index: 1;
     display: none;
     top: 10px;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-li{
-    margin-bottom:0px; 
+
+li {
+    margin-bottom: 0px;
 }
-        /*responsive screen size*/
-@media only screen and (max-width:992px){ [class*="buttons"]{
-    display: none;}
-    [class*="smaller"]{
-        display: block;}
+
+/*responsive screen size*/
+@media only screen and (max-width:992px) {
+    [class*="buttons"] {
+        display: none;
+    }
+
+    [class*="smaller"] {
+        display: block;
+    }
 }
-        /*little screen menu*/
-.hide{
-    display:none
+
+/*little screen menu*/
+.hide {
+    display: none
 }
-.show{
+
+.show {
     margin-top: 50px;
     position: fixed;
-    display:block;
+    display: block;
     z-index: 1;
 }
 
-.titanic{
+.titanic {
     float: none;
 }
 
-.button{ 
+.button {
     background-color: #f44336;
-    color:white;
+    color: white;
     border-right: 3px solid white;
     border-left: 3px solid white;
-    cursor:pointer;
+    cursor: pointer;
     display: inline-block;
     width: 100%;
     text-align: center;
-    align-self:right;
+    align-self: right;
     text-decoration: none !important;
     padding: 15px;
-    }
+}
 
-.bottom{
+.bottom {
     border-bottom: 3px solid white;
 }
-.top{
+
+.top {
     border-top: 3px solid white;
 }
-a.button:hover{
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+a.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     color: #f44336;
     border-color: #f44336;
 }
 
 /* header sizings*/
-h1{font-size:36px}
-h2{font-size:30px}
-h3{font-size:24px}
-h4{font-size:20px}
-h5{font-size:18px}
-h6{font-size:16px}
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
 
 /* HEADER BIG BOX */
-.header{
-    padding:150px 15px;
-    background-color:#f44336;
+.header {
+    padding: 150px 15px;
+    background-color: #f44336;
     margin-right: 15px;
     text-align: center;
     color: white;
 }
-.headerPic{
+
+.headerPic {
     border-radius: 50%;
     height: 120pt;
     width: 120pt;
 }
-.bigHeader{
-margin:16px;
-font-size:64px;
+
+.bigHeader {
+    margin: 16px;
+    font-size: 64px;
 }
-.middleHeader{
-    font-size:24px;
+
+.middleHeader {
+    font-size: 24px;
 }
-.littleHeader{
+
+.littleHeader {
     font-size: 16pt;
 }
 
 /* first set */
-.firstMain{
-    padding:0 8px;
+.firstMain {
+    padding: 0 8px;
     padding-top: 64px;
-    padding-bottom:64px;
-    float:left;
-    width:100%;
+    padding-bottom: 64px;
+    float: left;
+    width: 100%;
 }
-.firstTop{
-    margin-left:auto;
-    margin-right:auto;
-    max-width:980px;
+
+.firstTop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
 }
-.firstHeader{
-    float:left;
-    width:66.66666%;
+
+.firstHeader {
+    float: left;
+    width: 66.66666%;
     padding: 0px 8px;
 }
-.firstBold{
-    padding-top:32px;
-    padding-bottom:32px;
+
+.firstBold {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.firstSmall{
-    color:#757575;
+
+.firstSmall {
+    color: #757575;
 }
 
 /* BORDER MIDDLE SEPARATING */
-hr{
-    width:75%;    
-    float:center;
+hr {
+    width: 75%;
+    float: center;
     border-style: hidden;
     border-top: 15px dotted !important;
-    color:#f44336;
+    color: #f44336;
 
 }
 
 /* second set */
-.secondMain{
-    padding:0 8px;
+.secondMain {
+    padding: 0 8px;
     padding-top: 64px;
-    padding-bottom:64px;
-    float:left;
-    width:100%;
-    background-color:#ff9a9a;
+    padding-bottom: 64px;
+    float: left;
+    width: 100%;
+    background-color: #ff9a9a;
 }
-.secondTop{
-    margin-left:auto;
-    margin-right:auto;
-    max-width:980px;
+
+.secondTop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
 }
-.secondHeader{
-    float:left;
-    width:66.66666%;
+
+.secondHeader {
+    float: left;
+    width: 66.66666%;
     padding: 0px 8px;
 }
-.secondBold{
-    padding-top:32px;
-    padding-bottom:32px;
+
+.secondBold {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.secondSmall{
-    color:#757575;
+
+.secondSmall {
+    color: #757575;
 }
 
 /*bottom bar*/
-.bottomBar{
-    width:100%;
-    padding:25px;
+.bottomBar {
+    width: 100%;
+    padding: 25px;
     background-color: #f44336;
     opacity: 60%;
-    display:block;
+    display: block;
     text-align: center;
 }
-.bottomWords{
-    margin:16px;
+
+.bottomWords {
+    margin: 16px;
     font-size: 24px;
-    color:white
+    color: white
 }
-.footer{
+
+.footer {
     position: static;
     left: 0;
     bottom: 0;
@@ -227,33 +278,38 @@ hr{
 
 /* for sub-pages */
 
-.header2{
-    padding:100px 15px;
-    background-color:#f44336;
+.header2 {
+    padding: 100px 15px;
+    background-color: #f44336;
     margin-right: 15px;
     text-align: center;
     color: white;
 }
-.bigHeader2{
-    margin:16px;
-    font-size:64px;
+
+.bigHeader2 {
+    margin: 16px;
+    font-size: 64px;
 }
-.firstMain2{
-    padding:0 8px;
+
+.firstMain2 {
+    padding: 0 8px;
     padding-top: 64px;
     padding-bottom: 64px;
-    float:left;
+    float: left;
     width: 100%;
 }
-.firstBold2{
-    padding-top:32px;
-    padding-bottom:32px;
+
+.firstBold2 {
+    padding-top: 32px;
+    padding-bottom: 32px;
     width: 100%;
     display: inline-block;
 }
-.firstSmall2{
-    color:#757575;
+
+.firstSmall2 {
+    color: #757575;
 }
+
 /*
 * stuff that hopefully will work- 
 * classes to make stuff hidden or visible,
@@ -272,297 +328,388 @@ hr{
 /*
 * Months
 */
-.Tishrei{
-    display:none;
+.Tishrei {
+    display: var(--hide);
 }
-.Cheshvan{
-    display:none;
+
+.Cheshvan {
+    display: var(--hide);
 }
-.Kislev{
-    display:none;
+
+.Kislev {
+    display: var(--hide);
 }
-.Teves{
-    display:none;
+
+.Teves {
+    display: var(--hide);
 }
-.Shevat{
-    display:none;
+
+.Shevat {
+    display: var(--hide);
 }
-.AdarAleph{
-    display:none;
+
+.AdarAleph {
+    display: var(--hide);
 }
-.Adar{
-    display:none;
+
+.Adar {
+    display: var(--hide);
 }
-.Nissan{
-    display:none;
+
+.Nissan {
+    display: var(--hide);
 }
-.Iyar{
-    display:none;
+
+.Iyar {
+    display: var(--hide);
 }
-.Sivan{
-    display:none;
+
+.Sivan {
+    display: var(--hide);
 }
-.Tamuz{
-    display:none;
+
+.Tamuz {
+    display: var(--hide);
 }
-.Av{
-    display:none;
+
+.Av {
+    display: var(--hide);
 }
-.Elul{
-    display:none;
+
+.Elul {
+    display: var(--hide);
 }
 
 
 /*
-* Parshiyos
-*/
-.Bereshis{
-    display:none;
+  * Parshiyos
+  */
+.Bereshis {
+    display: var(--hide);
 }
-.Noach{
-    display:none;
+
+.Noach {
+    display: var(--hide);
 }
-.LechLecha{
-    display:none;
+
+.LechLecha {
+    display: var(--hide);
 }
-.Vayera{
-    display:none;
+
+.Vayera {
+    display: var(--hide);
 }
-.ChayeiSara{
-    display:none;
+
+.ChayeiSara {
+    display: var(--hide);
 }
-.Toldos{
-    display:none;
+
+.Toldos {
+    display: var(--hide);
 }
-.Vayetzei{
-    display:none;
+
+.Vayetzei {
+    display: var(--hide);
 }
-.Vayishlach{
-    display:none;
+
+.Vayishlach {
+    display: var(--hide);
 }
-.Vayeshev{
-    display:none;
+
+.Vayeshev {
+    display: var(--hide);
 }
-.Miketz{
-    display:none;
+
+.Miketz {
+    display: var(--hide);
 }
-.Vayigash{
-    display:none;
+
+.Vayigash {
+    display: var(--hide);
 }
-.Vayechi{
-    display:none;
+
+.Vayechi {
+    display: var(--hide);
 }
-.Shemos{
-    display:none;
+
+.Shemos {
+    display: var(--hide);
 }
-.Vaera{
-    display:none;
+
+.Vaera {
+    display: var(--hide);
 }
-.Bo{
-    display:none;
+
+.Bo {
+    display: var(--hide);
 }
-.Nijna{
-    display:none;
+
+.Nijna {
+    display: var(--hide);
 }
-.Beshalach{
-    display:none;
+
+.Beshalach {
+    display: var(--hide);
 }
-.Yisro{
-    display:none;
+
+.Yisro {
+    display: var(--hide);
 }
-.Mishpatim{
-    display:none;
+
+.Mishpatim {
+    display: var(--hide);
 }
-.Terumah{
-    display:none;
+
+.Terumah {
+    display: var(--hide);
 }
-.Tetzaveh{
-    display:none;
+
+.Tetzaveh {
+    display: var(--hide);
 }
-.KiSisa{
-    display:none;
+
+.KiSisa {
+    display: var(--hide);
 }
-.Vayakhel{
-    display:none;
+
+.Vayakhel {
+    display: var(--hide);
 }
-.Pekudei{
-    display:none;
+
+.Pekudei {
+    display: var(--hide);
 }
-.Vayikra{
-    display:none;
+
+.Vayikra {
+    display: var(--hide);
 }
-.Tzav{
-    display:none;
+
+.Tzav {
+    display: var(--hide);
 }
-.Shmini{
-    display:none;
+
+.Shmini {
+    display: var(--hide);
 }
-.Tazria{
-    display:none;
+
+.Tazria {
+    display: var(--hide);
 }
-.Metzora{
-    display:none;
+
+.Metzora {
+    display: var(--hide);
 }
-.AchreiMos{
-    display:none;
+
+.AchreiMos {
+    display: var(--hide);
 }
-.Kedoshim{
-    display:none;
+
+.Kedoshim {
+    display: var(--hide);
 }
-.Emor{
-    display:none;
+
+.Emor {
+    display: var(--hide);
 }
-.Behar{
-    display:none;
+
+.Behar {
+    display: var(--hide);
 }
-.Bechukosai{
-    display:none;
+
+.Bechukosai {
+    display: var(--hide);
 }
-.Bamidbar{
-    display:none;
+
+.Bamidbar {
+    display: var(--hide);
 }
-.Naso{
-    display:none;
+
+.Naso {
+    display: var(--hide);
 }
-.Bahaloscha{
-    display:none;
+
+.Bahaloscha {
+    display: var(--hide);
 }
-.Shlach{
-    display:none;
+
+.Shlach {
+    display: var(--hide);
 }
-.Korach{
-    display:none;
+
+.Korach {
+    display: var(--hide);
 }
-.Chukas{
-    display:none;
+
+.Chukas {
+    display: var(--hide);
 }
-.Balak{
-    display:none;
+
+.Balak {
+    display: var(--hide);
 }
-.Pinchas{
-    display:none;
+
+.Pinchas {
+    display: var(--hide);
 }
-.Matos{
-    display:none;
+
+.Matos {
+    display: var(--hide);
 }
-.Masei{
-    display:none;
+
+.Masei {
+    display: var(--hide);
 }
-.Devarim{
-    display:none;
+
+.Devarim {
+    display: var(--hide);
 }
-.Vaeschanan{
-    display:none;
+
+.Vaeschanan {
+    display: var(--hide);
 }
-.Eikev{
-    display:none;
+
+.Eikev {
+    display: var(--hide);
 }
-.Reeh{
-    display:none;
+
+.Reeh {
+    display: var(--hide);
 }
-.Shoftim{
-    display:none;
+
+.Shoftim {
+    display: var(--hide);
 }
-.KiSeitzei{
-    display:none;
+
+.KiSeitzei {
+    display: var(--hide);
 }
-.KiSavo{
-    display:none;
+
+.KiSavo {
+    display: var(--hide);
 }
-.Nitzavim{
-    display:none;
+
+.Nitzavim {
+    display: var(--hide);
 }
-.Vayeilech{
-    display:none;
+
+.Vayeilech {
+    display: var(--hide);
 }
-.HaAzinu{
-    display:none;
+
+.HaAzinu {
+    display: var(--hide);
 }
-.VezosHabrachah{
-    display:none;
-}
-/*
-* Double Parshiyos
-*/
-.Vayakhel-Pekudei{
-    display:none;
-}
-.Tazria-Metzora{
-    display:none;
-}
-.AchreiMos-Kedoshim{
-    display:none;
-}
-.Behar-Bechukosai{
-    display:none;
-}
-.Chukas-Balak{
-    display:none;
-}
-.Matos-Masei{
-    display:none;
-}
-.Nitzavim-Vayeilech{
-    display:none;
+
+.VezosHabrachah {
+    display: var(--hide);
 }
 
 /*
-* Yontifs
-*/
-.Purim{
-    display:none;
+  * Double Parshiyos
+  */
+.Vayakhel-Pekudei {
+    display: var(--hide);
 }
-.Pesach{
-    display:none;
+
+.Tazria-Metzora {
+    display: var(--hide);
 }
-.Shavuos{
-    display:none;
+
+.AchreiMos-Kedoshim {
+    display: var(--hide);
 }
-.RoshHashana{
-    display:none;
+
+.Behar-Bechukosai {
+    display: var(--hide);
 }
-.YomKippur{
-    display:none;
+
+.Chukas-Balak {
+    display: var(--hide);
 }
-.Sukkos{
-    display:none;
+
+.Matos-Masei {
+    display: var(--hide);
 }
-.Sukkos2{
-    display:none;
+
+.Nitzavim-Vayeilech {
+    display: var(--hide);
 }
-.Chanukah{
-    display:none;
+
+/*
+  * Yontifs
+  */
+.Purim {
+    display: var(--hide);
 }
-.PesachSheini{
-    display:none;
+
+.Pesach {
+    display: var(--hide);
 }
-.LagBaomer{
-    display:none;
+
+.Shavuos {
+    display: var(--hide);
 }
-.ThreeWeeks{
-    display:none;
+
+.RoshHashana {
+    display: var(--hide);
 }
-.TuBav{
-    display:none;
+
+.YomKippur {
+    display: var(--hide);
 }
-.TuBishvat{
-    display:none;
+
+.Sukkos {
+    display: var(--hide);
 }
-.TishaBav{
-    display:none;
+
+.Sukkos2 {
+    display: var(--hide);
 }
-.AsarahBeteves{
-    display:none;
+
+.Chanukah {
+    display: var(--hide);
 }
-.NineDays{
-    display:none;
+
+.PesachSheini {
+    display: var(--hide);
 }
-.ShushanPurim{
-    display:none;
+
+.LagBaomer {
+    display: var(--hide);
 }
-.TzomGedalia{
-    display:none;
+
+.ThreeWeeks {
+    display: var(--hide);
 }
-.TaanisEsther{
-    display:none;
+
+.TuBav {
+    display: var(--hide);
+}
+
+.TuBishvat {
+    display: var(--hide);
+}
+
+.TishaBav {
+    display: var(--hide);
+}
+
+.AsarahBeteves {
+    display: var(--hide);
+}
+
+.NineDays {
+    display: var(--hide);
+}
+
+.ShushanPurim {
+    display: var(--hide);
+}
+
+.TzomGedalia {
+    display: var(--hide);
+}
+
+.TaanisEsther {
+    display: var(--hide);
 }

@@ -14,7 +14,7 @@
     <?php include 'menu.php'; ?>
 </head>
 
-<body onload="month()">
+<body>
 
     <!-- First section of text -->
 
