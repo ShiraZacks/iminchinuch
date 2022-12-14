@@ -16,7 +16,7 @@
     <br><br><br>
     <h1>Something went wrong!</h1>
     <h2>This is a 404 error, which means that the link you clicked is broken or the page you are trying to access does not exist.</h2>
-    <h3 ><a class="link404" href="index.php">Click here to return to the Eye Travel homepage.</a></h3>
+    <h3 ><a class="link404" href="index.php">Click here to return to the I'M IN CHINUCH homepage.</a></h3>
     <br><br>
 </div><br>
 <?php include "footer.php"?>
