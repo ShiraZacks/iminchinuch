@@ -24,7 +24,7 @@
 
 
     <!-- Tishrei -->
-    <div class="Tishrei">
+    <div class="Tishrei" id="tishrei">
         <div class="header2">
             <h1 class="bigHeader2">חדש תשרי</h1>
         </div>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Cheshvan -->
-    <div class="Cheshvan">
+    <div class="Cheshvan" id="cheshvan">
         <div class="header2">
             <h1 class="bigHeader2">חדש חשון</h1>
         </div>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- Kislev -->
-    <div class="Kislev">
+    <div class="Kislev" id="kislev">
         <div class="header2">
             <h1 class="bigHeader2">חדש כסלו</h1>
         </div>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- Teves -->
-    <div class="Teves">
+    <div class="Teves" id="teves">
         <div class="header2">
             <h1 class="bigHeader2">חדש טבת</h1>
         </div>
@@ -69,7 +69,7 @@
     </div>
 
     <!-- Shevat -->
-    <div class="Shevat">
+    <div class="Shevat" id="shevat">
         <div class="header2">
             <h1 class="bigHeader2">חדש שבט</h1>
         </div>
@@ -79,8 +79,19 @@
         </div>
     </div>
 
+    <!-- Adar Aleph -->
+    <div class="AdarAleph" id="adarAleph">
+        <div class="header2">
+            <h1 class="bigHeader2">'חדש אדר א</h1>
+        </div>
+        <div class="firstMain2">
+            <h5 class="firstBold2">Cupcake ipsum dolor sit amet chupa chups dragée soufflé cheesecake. Donut cake jelly-o marshmallow cheesecake croissant tart jujubes jujubes. Jelly beans jelly beans lollipop oat cake danish. Tiramisu muffin tiramisu carrot cake chocolate lollipop pastry. Tart wafer candy cake icing cake shortbread. Donut carrot cake jelly beans liquorice cheesecake carrot cake dessert caramels danish. Lemon drops apple pie gummi bears tootsie roll cotton candy biscuit pastry. Jelly carrot cake chocolate cake lemon drops marzipan jelly-o candy canes. Donut soufflé caramels shortbread pastry jelly-o ice cream macaroon sesame snaps.</h5>
+            <p class="firstSmall2">Cupcake ipsum dolor sit amet chupa chups dragée soufflé cheesecake. Donut cake jelly-o marshmallow cheesecake croissant tart jujubes jujubes. Jelly beans jelly beans lollipop oat cake danish. Tiramisu muffin tiramisu carrot cake chocolate lollipop pastry. Tart wafer candy cake icing cake shortbread. Donut carrot cake jelly beans liquorice cheesecake carrot cake dessert caramels danish. Lemon drops apple pie gummi bears tootsie roll cotton candy biscuit pastry. Jelly carrot cake chocolate cake lemon drops marzipan jelly-o candy canes. Donut soufflé caramels shortbread pastry jelly-o ice cream macaroon sesame snaps.</p>
+        </div>
+    </div>    
+    
     <!-- Adar -->
-    <div class="Adar">
+    <div class="Adar" id="adar">
         <div class="header2">
             <h1 class="bigHeader2">חדש אדר</h1>
         </div>
@@ -91,7 +102,7 @@
     </div>
 
     <!-- Nissan -->
-    <div class="Nissan">
+    <div class="Nissan" id="nissan">
         <div class="header2">
             <h1 class="bigHeader2">חדש ניסן</h1>
         </div>
@@ -102,7 +113,7 @@
     </div>
 
     <!-- Iyar -->
-    <div class="Iyar">
+    <div class="Iyar" id="iyar">
         <div class="header2">
             <h1 class="bigHeader2">חדש אייר</h1>
         </div>
@@ -113,7 +124,7 @@
     </div>
 
     <!-- Sivan -->
-    <div class="Sivan">
+    <div class="Sivan" id="sivan">
         <div class="header2">
             <h1 class="bigHeader2">חדש סיון</h1>
         </div>
@@ -124,7 +135,7 @@
     </div>
 
     <!-- Tamuz -->
-    <div class="Tamuz">
+    <div class="Tamuz" id="tamuz">
         <div class="header2">
             <h1 class="bigHeader2">חדש תמוז</h1>
         </div>
@@ -135,7 +146,7 @@
     </div>
 
     <!-- Av -->
-    <div class="Av">
+    <div class="Av" id="av">
         <div class="header2">
             <h1 class="bigHeader2">חדש אב</h1>
         </div>
@@ -146,7 +157,7 @@
     </div>
 
     <!-- Elul -->
-    <div class="Elul">
+    <div class="Elul" id="elul">
         <div class="header2">
             <h1 class="bigHeader2">חדש אלול</h1>
         </div>
