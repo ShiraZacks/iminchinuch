@@ -23,4 +23,6 @@ echo ' <!-- Navbar  -->
                 <li><a href="contact.php" class="button bottom">Contact Me</a></li>
             </ul>
         </div>
-    </div>';?>
+    </div>
+<div class="under_the_menu"></div>
+';?>

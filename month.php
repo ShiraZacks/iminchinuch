@@ -20,8 +20,8 @@
 
     <?php
     //get data from mysql? i could, or i could continue with what i have under here just without cupcake stuff but regular.
+    echo "this is a test:)"
     ?>
-
 
     <!-- Tishrei -->
     <div class="Tishrei" id="tishrei">
