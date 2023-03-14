@@ -54,12 +54,17 @@
                 </div>
             </div>
         </div>
+        <hr>
+
+
         <div id="hebcal-shabbat"></div>
         <script defer>
             fetch('https://www.hebcal.com/shabbat?cfg=i2&geonameid=4990729&b=18&M=on&lg=a&tgt=_top')
                 .then(response => response.text())
                 .then(data => document.getElementById('hebcal-shabbat').innerHTML = data);
         </script>
+
+
         <hr>
         <div class="bottomBar">
             <h1 class="bottomWords">Words To Live By: A day without laughing is a day wasted.</h1>

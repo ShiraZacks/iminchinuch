@@ -724,6 +724,7 @@ hr {
 /* this is for the hebcal in index, shabbos times etc */
 
 div.hebcal-container {
+    text-align: center;
     font-family: "Gill Sans MT", "Gill Sans", GillSans, Arial, Helvetica, sans-serif;
     font-size: small;
 }
