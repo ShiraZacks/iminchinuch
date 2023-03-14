@@ -35,9 +35,11 @@ body {
     position: fixed;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-.under_the_menu{
-    height:70px;
+
+.under_the_menu {
+    height: 70px;
 }
+
 /*buttons on menu*/
 .buttons {
     vertical-align: middle;
@@ -715,4 +717,46 @@ hr {
 
 .TaanisEsther {
     display: var(--hide);
+}
+
+
+
+/* this is for the hebcal in index, shabbos times etc */
+
+div.hebcal-container {
+    font-family: "Gill Sans MT", "Gill Sans", GillSans, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+div.hebcal-container div h3 {
+    font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+}
+
+div.hebcal-container div ul.hebcal-results {
+    list-style-type: none
+}
+
+div.hebcal-container div ul.hebcal-results li {
+    margin-bottom: 11px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: normal;
+}
+
+div.hebcal-container div div.hebcal-results .candles {
+    color: red;
+    font-size: large
+}
+
+div.hebcal-container div div.hebcal-results .havdalah {
+    color: green
+}
+
+div.hebcal-container div div.hebcal-results .parashat {
+    color: black;
+    background: #ff9
+}
+
+div.hebcal-container div div.hebcal-results .holiday {
+    display: none
 }
