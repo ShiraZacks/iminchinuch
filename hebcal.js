@@ -3,7 +3,7 @@ function todayNow() {
   var todayDay =  new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric'}).format(new Date());
   var todayMonth =  new Intl.DateTimeFormat('en-u-ca-hebrew', {month: 'long'}).format(new Date());
   var todayYear =  new Intl.DateTimeFormat('en-u-ca-hebrew', {year: 'numeric'}).format(new Date());
-  document.getElementById("date").innerText = "Today is " + todayDay +" " + todayMonth + ", " + todayYear + ".";
+  //document.getElementById("date").innerText = "Today is " + todayDay +" " + todayMonth + ", " + todayYear + ".";
   console.log(todayDay + todayMonth + todayYear)
 }
 
@@ -14,8 +14,7 @@ var year = new Intl.DateTimeFormat('en-u-ca-hebrew', { year: 'numeric' }).format
 var month = new Intl.DateTimeFormat('en-u-ca-hebrew', { month: 'long' }).format(new Date());
 var day = new Intl.DateTimeFormat('en-u-ca-hebrew', { day: 'numeric' }).format(new Date());
 
-
-  console.log("Today is " + weekday + ", the " + day + " of " + month + ", " + year)
+console.log("Today is " + weekday + ", the " + day + " of " + month + ", " + year)
 
   if (month == "Tishri") {
     ('.Tishrei').css('display', 'block')

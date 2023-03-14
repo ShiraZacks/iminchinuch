@@ -24,12 +24,8 @@
     </header>
 
     <!-- First section of text -->
-    <div class="firstSmall">
+    <div class="firstSmall"></div>
         <!-- today's date -->
-
-
-
-        <h2 id="hebrewDate"></h2>
 
         <!-- First section of text -->
         <div class="firstMain">
