@@ -31,10 +31,10 @@
         <div class="firstMain">
             <div class="firstTop">
                 <div class="firstHeader">
-                    <h1>Welcome to this AMAZING website!</h1>
-                    <h5 class="firstBold">Created in entirety by Shira Zacks</h5>
+                    <h1>Just because you left school</h1>
+                    <h5 class="firstBold">doesn't mean you need to stop learning.</h5>
 
-                    <p class="firstSmall">(who is amazing)</p>
+                    <p class="firstSmall">Keep it up!</p>
                 </div>
 
             </div>
