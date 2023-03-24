@@ -36,7 +36,6 @@
 
                     <p class="firstSmall">Keep it up!</p>
                 </div>
-
             </div>
         </div>
         <hr>

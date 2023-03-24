@@ -218,6 +218,7 @@ hr {
     width: 75%;
     float: center;
     border-style: hidden;
+    margin: auto;
     border-top: 15px dotted !important;
     color: #f44336;
 
