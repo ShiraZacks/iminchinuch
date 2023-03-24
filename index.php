@@ -12,7 +12,6 @@
     <?php include 'menu.php'; ?>
 </head>
 
-
 <body onload="todayNow()">
     <!-- Header -->
     <header class="header">
@@ -45,7 +44,12 @@
                 <div class="secondHeader">
                     <h1>Recent Updates</h1>
                     <h5 class="secondBold">Looked at a calendar recently? </h5>
-                    <p id="date" class="secondSmall"></p>
+                    <p id="date" class="secondSmall">
+                        <?php 
+                            include 'test.php';
+                            getHebrewDate();
+                        ?>
+</p>
                 </div>
             </div>
         </div>

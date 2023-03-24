@@ -6,34 +6,35 @@ function getHebrewDate()
 
     // Convert Gregorian date to Julian day count
     $julianDay = gregoriantojd($gregorianDate->format('m'), $gregorianDate->format('d'), $gregorianDate->format('Y'));
-    echo $julianDay;
+
     // Calculate Jewish date from Julian day count
-    $jewishDate = jdtojewish($julianDay);
-    echo $jewishDate;
+    $jDate = jdtojewish($julianDay);
+    //echo $jDate,"   ";
+
+    //change that str to  date
+    $toTime = strtotime($jDate);
+    $jewishDate = getdate($toTime);
+
     // Convert month number to its string representation
     $monthNames = [
-        1 => 'Nisan',
-        2 => 'Iyar',
-        3 => 'Sivan',
-        4 => 'Tammuz',
-        5 => 'Av',
-        6 => 'Elul',
-        7 => 'Tishrei',
-        8 => 'Cheshvan',
-        9 => 'Kislev',
-        10 => 'Tevet',
-        11 => 'Shevat',
-        12 => 'Adar',
-        13 => 'Adar II'
+        1 => 'Tishrei',
+        2 => 'Cheshvan',
+        3 => 'Kislev',
+        4 => 'Teves',
+        5 => 'Shevat',
+        6 => 'Adar Aleph',
+        7 => 'Adar',
+        8 => 'Nisan',
+        9 => 'Iyar',
+        10 => 'Sivan',
+        11 => 'Tammuz',
+        12 => 'Av',
+        13 => 'Elul'
     ];
-    $monthStr = $monthNames[$jewishDate['month']];
-    echo $monthNames;
-    echo $monthStr;
+    $monthStr = $monthNames[$jewishDate['mon']];
     // Store the final answer in a variable called "hebrewDate"
-    $hebrewDate = $monthStr . ' ' . $jewishDate['day'] . ', ' . $jewishDate['year'];
+    $hebrewDate = $monthStr . ' ' . $jewishDate['mday'] . ', ' . $jewishDate['year'];
 
-    return $hebrewDate;
-echo $hebrewDate; // Outputs something like "Nisan 2, 5782"
+echo "Today is $hebrewDate!"; // Outputs something like "Nisan 2, 5782"
 
 }
-getHebrewDate();
