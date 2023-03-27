@@ -1,17 +1,18 @@
 <?php
     header("Content-type: text/css; charset: UTF-8");
+
+    $hide = "none";
+    $view = "block";
 ?>
 
-:root {
+<!-- :root {
     --hide: none;
     --view: block;
-}
+} -->
 
 
 
-
-
-/*
+<!-- 
 * stuff that hopefully will work- 
 * classes to make stuff hidden or visible,
 * depending on if its that week/month/yontif or not
@@ -24,61 +25,61 @@
 * and that would just be awkward
 *
 *it needs individual classes, otherwise it will change all of them
-*/
+-->
 
 /*
 * Months
 */
 .Tishrei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Cheshvan {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Kislev {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Teves {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shevat {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .AdarAleph {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Adar {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Nissan {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Iyar {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Sivan {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Tamuz {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Av {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Elul {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 
@@ -86,331 +87,331 @@
   * Parshiyos
   */
 .Bereshis {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Noach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .LechLecha {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayera {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .ChayeiSara {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Toldos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayetzei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayishlach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayeshev {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Miketz {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayigash {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayechi {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shemos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vaera {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Bo {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Nijna {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Beshalach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Yisro {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Mishpatim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Terumah {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Tetzaveh {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .KiSisa {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayakhel {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Pekudei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayikra {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Tzav {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shmini {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Tazria {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Metzora {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .AchreiMos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Kedoshim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Emor {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Behar {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Bechukosai {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Bamidbar {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Naso {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Bahaloscha {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shlach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Korach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Chukas {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Balak {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Pinchas {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Matos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Masei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Devarim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vaeschanan {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Eikev {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Reeh {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shoftim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .KiSeitzei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .KiSavo {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Nitzavim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Vayeilech {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .HaAzinu {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .VezosHabrachah {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 /*
   * Double Parshiyos
   */
 .Vayakhel-Pekudei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Tazria-Metzora {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .AchreiMos-Kedoshim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Behar-Bechukosai {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Chukas-Balak {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Matos-Masei {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Nitzavim-Vayeilech {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 /*
   * Yontifs
   */
 .Purim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Pesach {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Shavuos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .RoshHashana {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .YomKippur {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Sukkos {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Sukkos2 {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .Chanukah {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .PesachSheini {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .LagBaomer {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .ThreeWeeks {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .TuBav {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .TuBishvat {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .TishaBav {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .AsarahBeteves {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .NineDays {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .ShushanPurim {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .TzomGedalia {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
 
 .TaanisEsther {
-    display: var(--hide);
+    display: <?php echo $hide; ?>;
 }
