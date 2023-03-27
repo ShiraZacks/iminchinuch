@@ -9,7 +9,7 @@
     <script type="text/javascript" charset="utf-8" src="hebcal.js?<?= time() ?>"></script>
     <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="style.css?<?= time() ?>">
     <link rel="stylesheet" href="style.php?<?= time() ?>">
     <?php include 'menu.php'; ?>
 </head>
@@ -20,7 +20,6 @@
 
     <?php
     //get data from mysql? i could, or i could continue with what i have under here just without cupcake stuff but regular.
-    echo "this is a test:)"
     ?>
 
     <!-- Tishrei -->
@@ -162,7 +161,7 @@
             <h1 class="bigHeader2">חדש אלול</h1>
         </div>
         <div class="firstMain2">
-            <h5 class="firstBold2">Beginning now, we will be hearing the shofar in shul unless you are not going to shul like me cuz I'm not a man except Shabbos when we don't do it. But you can ask your fathers/brothers/husbands/sons about it. We add Ledavid Hashem into davening, and at the end of the month we (again, mostly meaning our fathers/brothers/husbands/sons) say selichos. We wish everyone a kesiva v'chasima tova. Also bein hazmanim ends. </h5>
+            <h5 class="firstBold2">Beginning now, we will be hearing the shofar in shul unless you are not going to shul like me (cuz I'm not a man), except Shabbos when we don't do it. But you can ask your fathers/brothers/husbands/sons about it. We add Ledavid Hashem into davening, and at the end of the month we (again, mostly meaning our fathers/brothers/husbands/sons) say selichos. We wish everyone a kesiva v'chasima tova. Also bein hazmanim ends. </h5>
             <p class="firstSmall2">The name Elul, as we know from Mrs. Bloch's song, stands for the words Ani Ledodi V'Dodi Li. I am for Hashem and Hashem is for me🎵🎶 . This month is a time when we take on kabbalos and work on ourselves, trying to be the best that we could be. I heard somewhere that it is not that we are being like hypocrites, "Oh, Rosh Hashana and Yom Kippur are coming, let's be good" like goyim do with a certain holiday where good kids get presents from a flying zaidy who keeps tabs on everyone just for that month. Instead, we are showing Hashem that this is what we wish we could be like. We are showing Hashem that we know that this is ideal, and we wish we could always live up to the ideal but unfortunately, it is often really hard to do it. This month is the month where we try our best, not because the other months don't count, but because we wish we could always be living our lives this way.</p>
         </div>
     </div>
