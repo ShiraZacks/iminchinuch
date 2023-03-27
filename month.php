@@ -100,8 +100,8 @@
         </div>
     </div>
 
-    <!-- Nissan -->
-    <div class="Nissan" id="nissan">
+    <!-- Nisan -->
+    <div class="Nisan" id="nisan">
         <div class="header2">
             <h1 class="bigHeader2">חדש ניסן</h1>
         </div>

@@ -1,12 +1,11 @@
+
 <?php
     header("Content-type: text/css; charset: UTF-8");
-
-    $display = "none";
 
     include "test.php";
     global $monthStr;
     if($monthStr = "Nisan"){
-        $display = "block";
+        $displayNisan = "block";
     }else{
         print "This is still under construction! Sorry!";
     }
@@ -29,391 +28,391 @@
 *it needs individual classes, otherwise it will change all of them
 -->
 
-/*
+<!-- /*
 * Months
-*/
+*/ -->
 .Tishrei {
-    display: <?php echo $display; ?>;
+    display: <?php $displayTishrei = "none"; echo $displayTishrei; ?>;
 }
 
 .Cheshvan {
-    display: <?php echo $display; ?>;
+    display: <?php $displayCheshvan = "none"; echo $displayCheshvan; ?>;
 }
 
 .Kislev {
-    display: <?php echo $display; ?>;
+    display: <?php $displayKislev = "none"; echo $displayKislev; ?>;
 }
 
 .Teves {
-    display: <?php echo $display; ?>;
+    display: <?php $displayTeves = "none"; echo $displayTeves; ?>;
 }
 
 .Shevat {
-    display: <?php echo $display; ?>;
+    display: <?php $displayShevat = "none"; echo $displayShevat; ?>;
 }
 
 .AdarAleph {
-    display: <?php echo $display; ?>;
+    display: <?php $displayAdarAleph = "none"; echo $displayAdarAleph; ?>;
 }
 
 .Adar {
-    display: <?php echo $display; ?>;
+    display: <?php $displayAdar = "none"; echo $displayAdar; ?>;
 }
 
-.Nissan {
-    display: <?php echo $display; ?>;
+.Nisan {
+    display: <?php $displayNisan = "none"; echo $displayNisan; ?>;
 }
 
 .Iyar {
-    display: <?php echo $display; ?>;
+    display: <?php $displayIyar = "none"; echo $displayIyar; ?>;
 }
 
 .Sivan {
-    display: <?php echo $display; ?>;
+    display: <?php $displaySivan = "none"; echo $displaySivan; ?>;
 }
 
 .Tamuz {
-    display: <?php echo $display; ?>;
+    display: <?php $displayTamuz = "none"; echo $displayTamuz; ?>;
 }
 
 .Av {
-    display: <?php echo $display; ?>;
+    display: <?php $displayAv = "none"; echo $displayAv; ?>;
 }
 
 .Elul {
-    display: <?php echo $display; ?>;
+    display: <?php $displayElul = "none"; echo $displayElul; ?>;
 }
 
 
-/*
+<!-- /*
   * Parshiyos
-  */
+  */ -->
 .Bereshis {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Noach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .LechLecha {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayera {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .ChayeiSara {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Toldos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayetzei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayishlach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayeshev {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Miketz {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayigash {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayechi {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Shemos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vaera {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Bo {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Nijna {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Beshalach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Yisro {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Mishpatim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Terumah {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Tetzaveh {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .KiSisa {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayakhel {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Pekudei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayikra {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Tzav {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Shmini {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Tazria {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Metzora {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .AchreiMos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Kedoshim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Emor {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Behar {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Bechukosai {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Bamidbar {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Naso {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Bahaloscha {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Shlach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Korach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Chukas {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Balak {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Pinchas {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Matos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Masei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Devarim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vaeschanan {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Eikev {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Reeh {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Shoftim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .KiSeitzei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .KiSavo {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Nitzavim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Vayeilech {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .HaAzinu {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .VezosHabrachah {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
-/*
+<!-- /*
   * Double Parshiyos
-  */
+  */ -->
 .Vayakhel-Pekudei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Tazria-Metzora {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .AchreiMos-Kedoshim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Behar-Bechukosai {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Chukas-Balak {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Matos-Masei {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Nitzavim-Vayeilech {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
-/*
+<!-- /*
   * Yontifs
-  */
+  */ -->
 .Purim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Pesach {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Shavuos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .RoshHashana {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .YomKippur {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Sukkos {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Sukkos2 {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .Chanukah {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .PesachSheini {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .LagBaomer {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .ThreeWeeks {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .TuBav {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .TuBishvat {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .TishaBav {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .AsarahBeteves {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .NineDays {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .ShushanPurim {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .TzomGedalia {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }
 
 .TaanisEsther {
-    display: <?php echo $display; ?>;
+    display: <?php $display = "none"; echo $display; ?>;
 }

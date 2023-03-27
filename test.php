@@ -27,7 +27,7 @@ $monthNames = [
     8 => 'Nisan',
     9 => 'Iyar',
     10 => 'Sivan',
-    11 => 'Tammuz',
+    11 => 'Tamuz',
     12 => 'Av',
     13 => 'Elul'
 ];
@@ -52,9 +52,10 @@ getHebrewDate(); //get rid of after it works, otherwise date shows up twice
 
 function monthPost(){
 global $monthStr;
-
-    if ($monthStr == "Tishri") {
-        ('.Tishri');//something that changes css class -> display = block instead of none
+include "style.pjp";
+global $displayTishrei ;
+    if ($monthStr == "Tishrei") {
+        $displayTishrei = "block";//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Heshvan") {
         ('.Cheshvan');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Kislev") {
@@ -68,7 +69,7 @@ global $monthStr;
       } else if ($monthStr == "Adar") {
         ('.Adar');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Nisan") {
-        ('.Nissan');//something that changes css class -> display = block instead of none
+        ('.Nisan');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Iyar") {
         ('.Iyar');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Sivan") {
