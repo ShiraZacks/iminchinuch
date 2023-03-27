@@ -39,3 +39,37 @@ function getHebrewDate()
 echo "Today is $hebrewDate!"; // Outputs todays date in "Nisan 2, 5783" format
 }
 getHebrewDate();
+
+
+function monthPost(){
+global $monthStr;
+
+    if ($monthStr == "Tishri") {
+        ('.Tishrei').css('display', 'block');
+      } else if ($monthStr == "Heshvan") {
+        ('.Cheshvan').css('display', 'block');
+      } else if ($monthStr == "Kislev") {
+        ('.Kislev').css('display', 'block');
+      } else if ($monthStr == "Tevet") {
+        ('.Teves').css('display', 'block');
+      } else if ($monthStr == "Shevat") {
+        ('.Shevat').css('display', 'block');
+      } else if ($monthStr == "Adar I") {
+        ('.AdarAleph').css('display', 'block');
+      } else if ($monthStr == "Adar") {
+        ('.Adar').css('display', 'block');
+      } else if ($monthStr == "Nisan") {
+        ('.Nissan').css('display', 'block');
+      } else if ($monthStr == "Iyar") {
+        ('.Iyar').css('display', 'block');
+      } else if ($monthStr == "Sivan") {
+        ('.Sivan').css('display', 'block');
+      } else if ($monthStr == "Tamuz") {
+        ('.Tamuz').css('display', 'block');
+      } else if ($monthStr == "Av") {
+        ('.Av').css('display', 'block');
+      } else if ($monthStr == "Elul") {
+      } else{
+        print "Something went wrong... Is today not a date?? 🤨";
+      }
+}

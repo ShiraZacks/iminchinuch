@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" charset="utf-8" src="hebcal.js"></script>
     <script type="text/javascript" charset="utf-8" src="toggleBars.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.php?<?= time() ?>">
     <?php include 'menu.php'; ?>
 </head>
 

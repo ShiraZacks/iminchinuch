@@ -1,3 +1,7 @@
+<?php
+    header("Content-type: text/css; charset: UTF-8");
+?>
+
 /*
 * main color: #f44336
 * secondary color: #757575
