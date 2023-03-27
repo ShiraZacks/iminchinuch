@@ -1,4 +1,6 @@
 <?php
+//^V^V^V^V^V^V^V^V^V^//
+//this section gets currrent Hebrew calendar date using lots of other info.
 // Get current Gregorian date
 $gregorianDate = new DateTime();
 
@@ -29,45 +31,52 @@ $monthNames = [
     12 => 'Av',
     13 => 'Elul'
 ];
+//get current month name in string form
 $monthStr = $monthNames[$jewishDate['mon']];
+
 // Store the final answer in a variable called "hebrewDate"
 $hebrewDate = $monthStr . ' ' . $jewishDate['mday'] . ', ' . $jewishDate['year'];
 
+//-=-=-=-=-=-=-=-//
 function getHebrewDate()
 {
     global $hebrewDate; //global gets variable from outside the function
 echo "Today is $hebrewDate!"; // Outputs todays date in "Nisan 2, 5783" format
 }
-getHebrewDate();
+//-=-=-=-=-=-=-=-//
+
+getHebrewDate(); //get rid of after it works, otherwise date shows up twice
+
+//^V^V^V^V^V^V^V^V^V^//
 
 
 function monthPost(){
 global $monthStr;
 
     if ($monthStr == "Tishri") {
-        ('.Tishrei').css('display', 'block');
+        ('.Tishri');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Heshvan") {
-        ('.Cheshvan').css('display', 'block');
+        ('.Cheshvan');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Kislev") {
-        ('.Kislev').css('display', 'block');
+        ('.Kislev');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Tevet") {
-        ('.Teves').css('display', 'block');
+        ('.Teves');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Shevat") {
-        ('.Shevat').css('display', 'block');
+        ('.Shevat');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Adar I") {
-        ('.AdarAleph').css('display', 'block');
+        ('.AdarAleph');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Adar") {
-        ('.Adar').css('display', 'block');
+        ('.Adar');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Nisan") {
-        ('.Nissan').css('display', 'block');
+        ('.Nissan');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Iyar") {
-        ('.Iyar').css('display', 'block');
+        ('.Iyar');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Sivan") {
-        ('.Sivan').css('display', 'block');
+        ('.Sivan');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Tamuz") {
-        ('.Tamuz').css('display', 'block');
+        ('.Tamuz');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Av") {
-        ('.Av').css('display', 'block');
+        ('.Av');//something that changes css class -> display = block instead of none
       } else if ($monthStr == "Elul") {
       } else{
         print "Something went wrong... Is today not a date?? 🤨";

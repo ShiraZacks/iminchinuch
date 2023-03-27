@@ -1,0 +1,764 @@
+/*
+* main color: #f44336
+* secondary color: #757575
+* third color: #ff9a9a
+* 
+*/
+
+:root {
+    --hide: none;
+    --view: block;
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    line-height: 1.5;
+    width: 100%;
+    display: var(--view);
+    overflow-x: hidden;
+}
+
+/*topBar*/
+.topBar {
+    z-index: 0;
+    top: 0px;
+    left: 0pt;
+    display: inline-block;
+    overflow: clip;
+    background-color: #f44336;
+    width: 100%;
+    height: 68px;
+    white-space: normal;
+    position: fixed;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.under_the_menu {
+    height: 70px;
+}
+
+/*buttons on menu*/
+.buttons {
+    vertical-align: middle;
+    line-height: 60px;
+    color: white;
+    cursor: pointer;
+    word-wrap: normal;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none !important;
+}
+
+/*hover button on menu*/
+a.buttons:hover {
+    color: #f44336;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*STUFF FOR LITTLE SCREEN*/
+.smaller {
+    z-index: 1;
+    display: none;
+    top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 0px;
+}
+
+/*responsive screen size*/
+@media only screen and (max-width:992px) {
+    [class*="buttons"] {
+        display: none;
+    }
+
+    [class*="smaller"] {
+        display: block;
+    }
+}
+
+/*little screen menu*/
+.hide {
+    display: none
+}
+
+.show {
+    margin-top: 50px;
+    position: fixed;
+    display: block;
+    z-index: 1;
+}
+
+.titanic {
+    float: none;
+}
+
+.button {
+    background-color: #f44336;
+    color: white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    align-self: right;
+    text-decoration: none !important;
+    padding: 15px;
+}
+
+.bottom {
+    border-bottom: 3px solid white;
+}
+
+.top {
+    border-top: 3px solid white;
+}
+
+a.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    color: #f44336;
+    border-color: #f44336;
+}
+
+/* header sizings*/
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+/* HEADER BIG BOX */
+.header {
+    padding: 150px 15px;
+    background-color: #f44336;
+    margin-right: 15px;
+    text-align: center;
+    color: white;
+}
+
+.headerPic {
+    border-radius: 50%;
+    height: 120pt;
+    width: 120pt;
+}
+
+.bigHeader {
+    margin: 16px;
+    font-size: 64px;
+}
+
+.middleHeader {
+    font-size: 24px;
+}
+
+.littleHeader {
+    font-size: 16pt;
+}
+
+/* first set */
+.firstMain {
+    padding: 0 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    float: left;
+    width: 100%;
+}
+
+.firstTop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+.firstHeader {
+    float: left;
+    width: 66.66666%;
+    padding: 0px 8px;
+}
+
+.firstBold {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.firstSmall {
+    color: #757575;
+}
+
+/* BORDER MIDDLE SEPARATING */
+hr {
+    width: 75%;
+    float: center;
+    border-style: hidden;
+    margin: auto;
+    border-top: 15px dotted !important;
+    color: #f44336;
+
+}
+
+/* second set */
+.secondMain {
+    padding: 0 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    float: left;
+    width: 100%;
+    background-color: #ff9a9a;
+}
+
+.secondTop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+.secondHeader {
+    float: left;
+    width: 66.66666%;
+    padding: 0px 8px;
+}
+
+.secondBold {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.secondSmall {
+    color: #757575;
+}
+
+/*bottom bar*/
+.bottomBar {
+    width: 100%;
+    padding: 25px;
+    background-color: #f44336;
+    opacity: 60%;
+    display: block;
+    text-align: center;
+}
+
+.bottomWords {
+    margin: 16px;
+    font-size: 24px;
+    color: white
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #f44336;
+}
+
+/* for sub-pages */
+
+.header2 {
+    padding: 100px 15px;
+    background-color: #f44336;
+    margin-right: 15px;
+    text-align: center;
+    color: white;
+}
+
+.bigHeader2 {
+    margin: 16px;
+    font-size: 64px;
+}
+
+.firstMain2 {
+    padding: 0 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    float: left;
+    width: 100%;
+}
+
+.firstBold2 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    display: inline-block;
+}
+
+.firstSmall2 {
+    color: #757575;
+}
+
+/*
+* stuff that hopefully will work- 
+* classes to make stuff hidden or visible,
+* depending on if its that week/month/yontif or not
+*
+* https://stackoverflow.com/questions/22576927/how-to-dynamically-change-css-class-of-an-html-tag
+*
+* visibility:hidden takes out the stuff but keeps the space there,
+* display:none won't leave the space.
+* Keep it with display:none cuz otherwise the space will still be there
+* and that would just be awkward
+*
+*it needs individual classes, otherwise it will change all of them
+*/
+
+/*
+* Months
+
+.Tishrei {
+    display: var(--hide);
+}
+
+.Cheshvan {
+    display: var(--hide);
+}
+
+.Kislev {
+    display: var(--hide);
+}
+
+.Teves {
+    display: var(--hide);
+}
+
+.Shevat {
+    display: var(--hide);
+}
+
+.AdarAleph {
+    display: var(--hide);
+}
+
+.Adar {
+    display: var(--hide);
+}
+
+.Nissan {
+    display: var(--hide);
+}
+
+.Iyar {
+    display: var(--hide);
+}
+
+.Sivan {
+    display: var(--hide);
+}
+
+.Tamuz {
+    display: var(--hide);
+}
+
+.Av {
+    display: var(--hide);
+}
+
+.Elul {
+    display: var(--hide);
+}
+
+
+/*
+  * Parshiyos
+
+.Bereshis {
+    display: var(--hide);
+}
+
+.Noach {
+    display: var(--hide);
+}
+
+.LechLecha {
+    display: var(--hide);
+}
+
+.Vayera {
+    display: var(--hide);
+}
+
+.ChayeiSara {
+    display: var(--hide);
+}
+
+.Toldos {
+    display: var(--hide);
+}
+
+.Vayetzei {
+    display: var(--hide);
+}
+
+.Vayishlach {
+    display: var(--hide);
+}
+
+.Vayeshev {
+    display: var(--hide);
+}
+
+.Miketz {
+    display: var(--hide);
+}
+
+.Vayigash {
+    display: var(--hide);
+}
+
+.Vayechi {
+    display: var(--hide);
+}
+
+.Shemos {
+    display: var(--hide);
+}
+
+.Vaera {
+    display: var(--hide);
+}
+
+.Bo {
+    display: var(--hide);
+}
+
+.Nijna {
+    display: var(--hide);
+}
+
+.Beshalach {
+    display: var(--hide);
+}
+
+.Yisro {
+    display: var(--hide);
+}
+
+.Mishpatim {
+    display: var(--hide);
+}
+
+.Terumah {
+    display: var(--hide);
+}
+
+.Tetzaveh {
+    display: var(--hide);
+}
+
+.KiSisa {
+    display: var(--hide);
+}
+
+.Vayakhel {
+    display: var(--hide);
+}
+
+.Pekudei {
+    display: var(--hide);
+}
+
+.Vayikra {
+    display: var(--hide);
+}
+
+.Tzav {
+    display: var(--hide);
+}
+
+.Shmini {
+    display: var(--hide);
+}
+
+.Tazria {
+    display: var(--hide);
+}
+
+.Metzora {
+    display: var(--hide);
+}
+
+.AchreiMos {
+    display: var(--hide);
+}
+
+.Kedoshim {
+    display: var(--hide);
+}
+
+.Emor {
+    display: var(--hide);
+}
+
+.Behar {
+    display: var(--hide);
+}
+
+.Bechukosai {
+    display: var(--hide);
+}
+
+.Bamidbar {
+    display: var(--hide);
+}
+
+.Naso {
+    display: var(--hide);
+}
+
+.Bahaloscha {
+    display: var(--hide);
+}
+
+.Shlach {
+    display: var(--hide);
+}
+
+.Korach {
+    display: var(--hide);
+}
+
+.Chukas {
+    display: var(--hide);
+}
+
+.Balak {
+    display: var(--hide);
+}
+
+.Pinchas {
+    display: var(--hide);
+}
+
+.Matos {
+    display: var(--hide);
+}
+
+.Masei {
+    display: var(--hide);
+}
+
+.Devarim {
+    display: var(--hide);
+}
+
+.Vaeschanan {
+    display: var(--hide);
+}
+
+.Eikev {
+    display: var(--hide);
+}
+
+.Reeh {
+    display: var(--hide);
+}
+
+.Shoftim {
+    display: var(--hide);
+}
+
+.KiSeitzei {
+    display: var(--hide);
+}
+
+.KiSavo {
+    display: var(--hide);
+}
+
+.Nitzavim {
+    display: var(--hide);
+}
+
+.Vayeilech {
+    display: var(--hide);
+}
+
+.HaAzinu {
+    display: var(--hide);
+}
+
+.VezosHabrachah {
+    display: var(--hide);
+}
+
+/*
+  * Double Parshiyos
+
+.Vayakhel-Pekudei {
+    display: var(--hide);
+}
+
+.Tazria-Metzora {
+    display: var(--hide);
+}
+
+.AchreiMos-Kedoshim {
+    display: var(--hide);
+}
+
+.Behar-Bechukosai {
+    display: var(--hide);
+}
+
+.Chukas-Balak {
+    display: var(--hide);
+}
+
+.Matos-Masei {
+    display: var(--hide);
+}
+
+.Nitzavim-Vayeilech {
+    display: var(--hide);
+}
+
+/*
+  * Yontifs
+    
+.Purim {
+    display: var(--hide);
+}
+
+.Pesach {
+    display: var(--hide);
+}
+
+.Shavuos {
+    display: var(--hide);
+}
+
+.RoshHashana {
+    display: var(--hide);
+}
+
+.YomKippur {
+    display: var(--hide);
+}
+
+.Sukkos {
+    display: var(--hide);
+}
+
+.Sukkos2 {
+    display: var(--hide);
+}
+
+.Chanukah {
+    display: var(--hide);
+}
+
+.PesachSheini {
+    display: var(--hide);
+}
+
+.LagBaomer {
+    display: var(--hide);
+}
+
+.ThreeWeeks {
+    display: var(--hide);
+}
+
+.TuBav {
+    display: var(--hide);
+}
+
+.TuBishvat {
+    display: var(--hide);
+}
+
+.TishaBav {
+    display: var(--hide);
+}
+
+.AsarahBeteves {
+    display: var(--hide);
+}
+
+.NineDays {
+    display: var(--hide);
+}
+
+.ShushanPurim {
+    display: var(--hide);
+}
+
+.TzomGedalia {
+    display: var(--hide);
+}
+
+.TaanisEsther {
+    display: var(--hide);
+} */
+
+
+
+/* this is for the hebcal in index, shabbos times etc */
+
+div.hebcal-container {
+    text-align: center;
+    font-family: "Gill Sans MT", "Gill Sans", GillSans, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+div.hebcal-container div h3 {
+    font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+}
+
+div.hebcal-container div ul.hebcal-results {
+    list-style-type: none
+}
+
+div.hebcal-container div ul.hebcal-results li {
+    margin-bottom: 11px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: normal;
+}
+
+div.hebcal-container div div.hebcal-results .candles {
+    color: red;
+    font-size: large
+}
+
+div.hebcal-container div div.hebcal-results .havdalah {
+    color: green
+}
+
+div.hebcal-container div div.hebcal-results .parashat {
+    color: black;
+    background: #ff9
+}
+
+div.hebcal-container div div.hebcal-results .holiday {
+    display: none
+}
