@@ -25,7 +25,8 @@
     </div>
     <div class="firstMain2">
         <h5 class="firstBold2">Or did you find a mistake?</h5>
-        <p class="firstSmall2">Please let me know!! im.in.chinuch@gmail.com</p>
+        <p class="firstSmall2">Please let me know!! Click the email to email me!</p>
+            <p class="email"><b onclick="window.open('mailto:misszacks@iminchinuch.org')">misszacks@iminchinuch.org</b></p>
     </div>
 
 
