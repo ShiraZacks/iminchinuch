@@ -303,6 +303,7 @@ hr {
     padding-bottom: 64px;
     float: left;
     width: 100%;
+    background-color: white;
 }
 
 .firstBold2 {
@@ -315,6 +316,37 @@ hr {
 .firstSmall2 {
     color: #757575;
 }
+
+/*
+* this is for my email
+*
+*/
+.email{
+    color: #757575;
+    width: fit-content;
+}
+
+.email::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 15px;
+    /* top: -10px; */
+    background-color: #f4433642;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .email:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
 
 /*
 * stuff that hopefully will work- 
