@@ -3,8 +3,12 @@ header("Content-type: text/css; charset: UTF-8");
 
 include "test.php";
 global $monthStr;
+echo '<script>console.log($monthStr); </script>';
+
 if ($monthStr = "Tishrei") {
     $displayTishrei = "block";
+    echo '<script>console.log("Writing Tishrei"); </script>';
+
 } elseif ($monthStr = "Iyar") {
     $displayIyar = "block";
 } elseif ($monthStr = "Sivan") {
@@ -12,23 +16,21 @@ if ($monthStr = "Tishrei") {
 } elseif ($monthStr = "Tamuz") {
     $displayTamuz = "block";
 } elseif ($monthStr = "Av") {
-    $displayAv = "block";//till here
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
-} elseif ($monthStr = "Iyar") {
-    $displayIyar = "block";
+    $displayAv = "block"; //till here
+} elseif ($monthStr = "Elul") {
+    $displayElul = "block";
+} elseif ($monthStr = "Tishrei") {
+    $displayTishrei = "block";
+} elseif ($monthStr = "CHeshvan") {
+    $displayCheshvan = "block";
+} elseif ($monthStr = "Kislev") {
+    $displayKislev = "block";
+} elseif ($monthStr = "Shevat") {
+    $displayShevat = "block";
+} elseif ($monthStr = "AdarAleph") {
+    $displayAdarAleph = "block";
+} elseif ($monthStr = "Adar") {
+    $displayAdar = "block";
 } else {
     print "This is still under construction! Sorry!";
 }

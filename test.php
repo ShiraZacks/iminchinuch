@@ -41,45 +41,9 @@ $hebrewDate = $monthStr . ' ' . $jewishDate['mday'] . ', ' . $jewishDate['year']
 function getHebrewDate()
 {
     global $hebrewDate; //global gets variable from outside the function
-echo "Today is $hebrewDate!"; // Outputs todays date in "Nisan 2, 5783" format
+    echo "Today is $hebrewDate!"; // Outputs todays date in "Nisan 2, 5783" format
 }
 //-=-=-=-=-=-=-=-//
 
-getHebrewDate(); //get rid of after it works, otherwise date shows up twice
 
 //^V^V^V^V^V^V^V^V^V^//
-
-
-function monthPost(){
-global $monthStr;
-include "style.pjp";
-global $displayTishrei ;
-    if ($monthStr == "Tishrei") {
-        $displayTishrei = "block";//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Heshvan") {
-        ('.Cheshvan');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Kislev") {
-        ('.Kislev');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Tevet") {
-        ('.Teves');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Shevat") {
-        ('.Shevat');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Adar I") {
-        ('.AdarAleph');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Adar") {
-        ('.Adar');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Nisan") {
-        ('.Nisan');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Iyar") {
-        ('.Iyar');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Sivan") {
-        ('.Sivan');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Tamuz") {
-        ('.Tamuz');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Av") {
-        ('.Av');//something that changes css class -> display = block instead of none
-      } else if ($monthStr == "Elul") {
-      } else{
-        print "Something went wrong... Is today not a date?? 🤨";
-      }
-}

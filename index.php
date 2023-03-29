@@ -12,7 +12,7 @@
     <?php include 'menu.php'; ?>
 </head>
 
-<body onload="todayNow()">
+<body>
     <!-- Header -->
     <header class="header">
         <h1 class="bigHeader">I'M IN CHINUCH</h1>
