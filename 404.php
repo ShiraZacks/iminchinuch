@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/png" href="eye.png" />
     <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
     <link rel="stylesheet" href="style.css?<?= time() ?>">
-    <link rel="stylesheet" href="style.php?<?= time() ?>">
 </head>
 <?php include "menu.php"; ?>
 

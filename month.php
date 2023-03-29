@@ -13,13 +13,16 @@
     <?php include 'menu.php'; ?>
 </head>
 
+<?php
+    include 'dbconnect.php';
+    $getMonth = "SELECT * FROM 'months'";
+?>
+<h3>This page is under construction. Sorry!!</h3>
+
+
 <body>
 
     <!-- First section of text -->
-
-    <?php
-    //get data from mysql? i could, or i could continue with what i have under here just without cupcake stuff but regular.
-    ?>
 
     <!-- Tishrei -->
     <div class="Tishrei" id="tishrei">
@@ -86,8 +89,8 @@
             <h5 class="firstBold2">Cupcake ipsum dolor sit amet chupa chups dragée soufflé cheesecake. Donut cake jelly-o marshmallow cheesecake croissant tart jujubes jujubes. Jelly beans jelly beans lollipop oat cake danish. Tiramisu muffin tiramisu carrot cake chocolate lollipop pastry. Tart wafer candy cake icing cake shortbread. Donut carrot cake jelly beans liquorice cheesecake carrot cake dessert caramels danish. Lemon drops apple pie gummi bears tootsie roll cotton candy biscuit pastry. Jelly carrot cake chocolate cake lemon drops marzipan jelly-o candy canes. Donut soufflé caramels shortbread pastry jelly-o ice cream macaroon sesame snaps.</h5>
             <p class="firstSmall2">Cupcake ipsum dolor sit amet chupa chups dragée soufflé cheesecake. Donut cake jelly-o marshmallow cheesecake croissant tart jujubes jujubes. Jelly beans jelly beans lollipop oat cake danish. Tiramisu muffin tiramisu carrot cake chocolate lollipop pastry. Tart wafer candy cake icing cake shortbread. Donut carrot cake jelly beans liquorice cheesecake carrot cake dessert caramels danish. Lemon drops apple pie gummi bears tootsie roll cotton candy biscuit pastry. Jelly carrot cake chocolate cake lemon drops marzipan jelly-o candy canes. Donut soufflé caramels shortbread pastry jelly-o ice cream macaroon sesame snaps.</p>
         </div>
-    </div>    
-    
+    </div>
+
     <!-- Adar -->
     <div class="Adar" id="adar">
         <div class="header2">

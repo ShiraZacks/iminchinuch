@@ -1,4 +1,458 @@
 
+/*
+* Months */
+
+.Tishrei {
+    display: none;
+}
+
+.Cheshvan {
+    display: none;
+}
+
+.Kislev {
+    display: none;
+}
+
+.Teves {
+    display: none;
+}
+
+.Shevat {
+    display: none;
+}
+
+.AdarAleph {
+    display: none;
+}
+
+.Adar {
+    display: none;
+}
+
+.Nisan {
+    display: none;
+}
+
+.Iyar {
+    display: none;
+}
+
+.Sivan {
+    display: none;
+}
+
+.Tamuz {
+    display: none;
+}
+
+.Av {
+    display: none;
+}
+
+.Elul {
+    display: none;
+}
+
+
+/*
+  * Parshiyos
+    */
+.Bereshis {
+    display: none;
+}
+
+.Noach {
+    display: none;
+}
+
+.LechLecha {
+    display: none;
+}
+
+.Vayera {
+    display: none;
+}
+
+.ChayeiSara {
+    display: none;
+}
+
+.Toldos {
+    display: none;
+}
+
+.Vayetzei {
+    display: none;
+}
+
+.Vayishlach {
+    display: none;
+}
+
+.Vayeshev {
+    display: none;
+}
+
+.Miketz {
+    display: none;
+}
+
+.Vayigash {
+    display: none;
+}
+
+.Vayechi {
+    display: none;
+}
+
+.Shemos {
+    display: none;
+}
+
+.Vaera {
+    display: none;
+}
+
+.Bo {
+    display: none;
+}
+
+.Nijna {
+    display: none;
+}
+
+.Beshalach {
+    display: none;
+}
+
+.Yisro {
+    display: none;
+}
+
+.Mishpatim {
+    display: none;
+}
+
+.Terumah {
+    display: none;
+}
+
+.Tetzaveh {
+    display: none;
+}
+
+.KiSisa {
+    display: none;
+}
+
+.Vayakhel {
+    display: none;
+}
+
+.Pekudei {
+    display: none;
+}
+
+.Vayikra {
+    display: none;
+}
+
+.Tzav {
+    display: none;
+}
+
+.Shmini {
+    display: none;
+}
+
+.Tazria {
+    display: none;
+}
+
+.Metzora {
+    display: none;
+}
+
+.AchreiMos {
+    display: none;
+}
+
+.Kedoshim {
+    display: none;
+}
+
+.Emor {
+    display: none;
+}
+
+.Behar {
+    display: none;
+}
+
+.Bechukosai {
+    display: none;
+}
+
+.Bamidbar {
+    display: none;
+}
+
+.Naso {
+    display: none;
+}
+
+.Bahaloscha {
+    display: none;
+}
+
+.Shlach {
+    display: none;
+}
+
+.Korach {
+    display: none;
+}
+
+.Chukas {
+    display: none;
+}
+
+.Balak {
+    display: none;
+}
+
+.Pinchas {
+    display: none;
+}
+
+.Matos {
+    display: none;
+}
+
+.Masei {
+    display: none;
+}
+
+.Devarim {
+    display: none;
+}
+
+.Vaeschanan {
+    display: none;
+}
+
+.Eikev {
+    display: none;
+}
+
+.Reeh {
+    display: none;
+}
+
+.Shoftim {
+    display: none;
+}
+
+.KiSeitzei {
+    display: none;
+}
+
+.KiSavo {
+    display: none;
+}
+
+.Nitzavim {
+    display: none;
+}
+
+.Vayeilech {
+    display: none;
+}
+
+.HaAzinu {
+    display: none;
+}
+
+.VezosHabrachah {
+    display: none;
+}
+
+< !--
+
+/*
+  * Double Parshiyos
+  */
+-->.Vayakhel-Pekudei {
+    display: none;
+}
+
+.Tazria-Metzora {
+    display: none;
+}
+
+.AchreiMos-Kedoshim {
+    display: none;
+}
+
+.Behar-Bechukosai {
+    display: none;
+}
+
+.Chukas-Balak {
+    display: none;
+}
+
+.Matos-Masei {
+    display: none;
+}
+
+.Nitzavim-Vayeilech {
+    display: none;
+}
+
+< !--
+
+/*
+  * Yontifs
+  */
+-->.Purim {
+    display: none;
+}
+
+.Pesach {
+    display: none;
+}
+
+.Shavuos {
+    display: none;
+}
+
+.RoshHashana {
+    display: none;
+}
+
+.YomKippur {
+    display: none;
+}
+
+.Sukkos {
+    display: none;
+}
+
+.Sukkos2 {
+    display: none;
+}
+
+.Chanukah {
+    display: none;
+}
+
+.PesachSheini {
+    display: none;
+}
+
+.LagBaomer {
+    display: none;
+}
+
+.ThreeWeeks {
+    display: none;
+}
+
+.TuBav {
+    display: none;
+}
+
+.TuBishvat {
+    display: none;
+}
+
+.TishaBav {
+    display: none;
+}
+
+.AsarahBeteves {
+    display: none;
+}
+
+.NineDays {
+    display: none;
+}
+
+.ShushanPurim {
+    display: none;
+}
+
+.TzomGedalia {
+    display: none;
+}
+
+.TaanisEsther {
+    display: none;
+}
+
+<!-- <?php switch ($monthNum) {
+    case 1:
+        $displayTishrei ="block";
+    echo '<script>console.log("Writing tishrei"); </script>';
+    break;
+
+    case 2:
+        $displayCheshvan ="block";
+    break;
+
+    case 3:
+        $displayKislev ="block";
+    break;
+
+    case 4:
+        $displayTeves ="block";
+    break;
+
+    case 5:
+        $displayShevat ="block";
+    break;
+
+    case 6:
+        $displayAdarAleph ="block";
+    break;
+
+    case 7:
+        $displayAdar ="block";
+    break;
+
+    case 8:
+        $displayNisan ="block";
+    break;
+
+    case 9:
+        $displayIyar ="block";
+    break;
+
+    case 10:
+        $displaySivan ="block";
+    break;
+
+    case 11:
+        $displayTamuz ="block";
+    break;
+
+    case 12:
+        $displayAv ="block";
+    break;
+
+    case 13:
+        $displayElul ="block";
+    break;
+
+    default:
+        print "This is still under construction! Sorry!";
+    break;
+} -->
+
+?>
+
 
 /*
 * stuff that hopefully will work- 
