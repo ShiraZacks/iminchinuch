@@ -9,7 +9,7 @@
     <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
     <link rel="stylesheet" href="style.php?<?= time() ?>">
     <link rel="stylesheet" href="style.css?<?= time() ?>">
-    <?php include 'menu.php'; ?>
+    <?php include 'menu.php';?>
 </head>
 
 <body>
