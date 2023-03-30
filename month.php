@@ -18,33 +18,45 @@ include 'dbconnect.php';
 include 'hebrewDate.php';
 switch ($monthNum) {
     case 1:
-        $query1 = "SELECT monthHebrew, monthAbout, monthMore FROM 'months' WHERE id = '1'";
-        $monthHebrew = mysqli_query($conn, $query1) or die();
-        echo '<script>console.log("Writing tishrei"); </script>';
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=1') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=1') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=1') or die();
         break;
 
     case 2:
-        $displayCheshvan = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=2') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=2') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=2') or die();
         break;
 
     case 3:
-        $displayKislev = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=3') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=3') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=3') or die();
         break;
 
     case 4:
-        $displayTeves = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=4') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=4') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=4') or die();
         break;
 
     case 5:
-        $displayShevat = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=5') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=5') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=5') or die();
         break;
 
     case 6:
-        $displayAdarAleph = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=6') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=6') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=6') or die();
         break;
 
     case 7:
-        $displayAdar = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=7') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=7') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=7') or die();
         break;
 
     case 8:
@@ -54,23 +66,33 @@ switch ($monthNum) {
         break;
 
     case 9:
-        $displayIyar = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=9') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=9') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=9') or die(); 
         break;
 
     case 10:
-        $displaySivan = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=10') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=10') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=10') or die();
         break;
 
     case 11:
-        $displayTamuz = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=11') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=11') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=11') or die();
         break;
 
     case 12:
-        $displayAv = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=12') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=12') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=12') or die();
         break;
 
     case 13:
-        $displayElul = "block";
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=13') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=13') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=13') or die();
         break;
 
     default:
@@ -81,7 +103,6 @@ $result1 = mysqli_fetch_array($monthHebrew);
 $result2 = mysqli_fetch_array($monthAbout);
 $result3 = mysqli_fetch_array($monthMore);
 ?>
-<h3>This page is under construction. Sorry!!</h3>
 
 
 <body>
