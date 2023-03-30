@@ -31,6 +31,9 @@ $monthNames = [
     12 => 'Av',
     13 => 'Elul'
 ];
+
+//get current month number
+$monthNum = $jewishDate['mon'];
 //get current month name in string form
 $monthStr = $monthNames[$jewishDate['mon']];
 

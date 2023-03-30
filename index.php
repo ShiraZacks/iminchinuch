@@ -45,7 +45,7 @@
                     <h5 class="secondBold">Looked at a calendar recently? </h5>
                     <p id="date" class="secondSmall">
                         <?php 
-                            include 'test.php';
+                            include 'hebrewDate.php';
                             getHebrewDate();
                         ?>
 </p>

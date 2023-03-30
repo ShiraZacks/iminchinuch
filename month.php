@@ -12,15 +12,99 @@
     <link rel="stylesheet" type='text/css' href="style.css?<?= time() ?>">
     <?php include 'menu.php'; ?>
 </head>
-
+<!-- this part gets the text from the mySQL database -->
 <?php
-    include 'dbconnect.php';
-    $getMonth = "SELECT * FROM 'months'";
+include 'dbconnect.php';
+include 'hebrewDate.php';
+switch ($monthNum) {
+    case 1:
+        $query1 = "SELECT monthHebrew, monthAbout, monthMore FROM 'months' WHERE id = '1'";
+        $monthHebrew = mysqli_query($conn, $query1) or die();
+        echo '<script>console.log("Writing tishrei"); </script>';
+        break;
+
+    case 2:
+        $displayCheshvan = "block";
+        break;
+
+    case 3:
+        $displayKislev = "block";
+        break;
+
+    case 4:
+        $displayTeves = "block";
+        break;
+
+    case 5:
+        $displayShevat = "block";
+        break;
+
+    case 6:
+        $displayAdarAleph = "block";
+        break;
+
+    case 7:
+        $displayAdar = "block";
+        break;
+
+    case 8:
+        $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=8') or die();
+        $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=8') or die();
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=8') or die();
+        break;
+
+    case 9:
+        $displayIyar = "block";
+        break;
+
+    case 10:
+        $displaySivan = "block";
+        break;
+
+    case 11:
+        $displayTamuz = "block";
+        break;
+
+    case 12:
+        $displayAv = "block";
+        break;
+
+    case 13:
+        $displayElul = "block";
+        break;
+
+    default:
+        print "This is still under construction! Sorry!";
+        break;
+}
+$result1 = mysqli_fetch_array($monthHebrew);
+$result2 = mysqli_fetch_array($monthAbout);
+$result3 = mysqli_fetch_array($monthMore);
 ?>
 <h3>This page is under construction. Sorry!!</h3>
 
 
 <body>
+    <div class="header2">
+        <h1 class="bigHeader2">
+            <?php
+            print $result1['monthHebrew'];
+            ?>
+        </h1>
+    </div>
+    <div class="firstMain2">
+        <h5 class="firstBold2">
+        <?php
+            print $result2['monthAbout'];
+            ?>
+        </h5>
+        <p class="firstSmall2">
+        <?php
+            print $result3['monthMore'];
+            ?>
+        </p>
+    </div>
+    </div>
 
     <!-- First section of text -->
 

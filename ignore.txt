@@ -392,6 +392,8 @@
     display: none;
 }
 
+
+
 <!-- <?php switch ($monthNum) {
     case 1:
         $displayTishrei ="block";
