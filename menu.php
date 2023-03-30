@@ -24,5 +24,5 @@ echo ' <!-- Navbar  -->
             </ul>
         </div>
     </div>
-<div class="under_the_menu"></div>
+    <div class="under_the_menu"></div>
 ';?>
