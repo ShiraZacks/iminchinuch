@@ -1,9 +1,8 @@
 /*
 * main color: #f44336
 * secondary color: #757575
-* third color: #ff9a9a
-* 
-*/
+* third color: #ffff
+* #ffff*/
 
 :root {
     --hide: none;
@@ -231,7 +230,7 @@ hr {
     padding-bottom: 64px;
     float: left;
     width: 100%;
-    background-color: #ff9a9a;
+    background-color: #ffff;
 }
 
 .secondTop {
