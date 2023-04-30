@@ -50,3 +50,5 @@ function getHebrewDate()
 
 
 //^V^V^V^V^V^V^V^V^V^//
+
+/* Parsha Section*/
