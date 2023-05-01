@@ -1,0 +1,43 @@
+{
+    "name": "zman/zman",
+    "description": "A Jewish date converter and helper.",
+    "license": "MIT",
+    "keywords": [
+        "Jewish",
+        "date",
+        "conversion",
+        "converter"
+    ],
+    "authors": [
+        {
+            "name": "Ari Miller",
+            "email": "arimiller92@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Zman\\": "src/" 
+        }
+    },
+    "require": {
+        "php": ">=7.1.8",
+        "nesbot/carbon": "^2.49"
+    },
+    "require-dev": {
+        "spatie/phpunit-watcher": "^1.23",
+        "vimeo/psalm": "^4.7",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "symfony/var-dumper": "^5.3",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "lint": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/phpunit",
+        "test-watch": "vendor/bin/phpunit-watcher watch",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}
