@@ -48,8 +48,9 @@
                 <p id="date" class="secondSmall">
                     <?php
                     include 'hebrewDate.php';
-                    getHebrewDate();
-                    ?>
+                    getHebrewDate(); ?>
+                    <div><?php include 'davening.php';?></div>
+                    
                 </p>
             </div>
         </div>
