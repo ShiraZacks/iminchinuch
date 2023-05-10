@@ -280,6 +280,12 @@ hr {
     padding: 10px;
     background-color: #f44336;
 }
+@media only screen and (max-width:992px) {
+    .footer{
+        width:80%; 
+        margin: 0 auto;
+    }
+}
 
 /* for sub-pages */
 
