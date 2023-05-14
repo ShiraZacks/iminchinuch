@@ -21,12 +21,9 @@
     <div class="header2">
         <h1 class="bigHeader2">Did you enjoy the latest update?</h1>
     </div>
-    <div class="firstMain2">
-        <h5 class="firstBold2">Or did you find a mistake?</h5>
-        <p class="firstSmall2">Please let me know!! Click the email to email me!</p>
-            <p class="email"><b onclick="window.open('mailto:misszacks@iminchinuch.org')">misszacks@iminchinuch.org</b></p>
-    </div>
 
+    <div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/106653794063306018762/form/1FAIpQLSfhlzyL89_TbtMNHuKaMxkgQBc132raQnrwZm0sdXt-Dh3Mlg/classic.js?div=ff-compose"></script>
 
     <!-- bottom footer -->
     <footer>
