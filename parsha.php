@@ -43,6 +43,13 @@
     ?>
 
     <body>
+        <?php
+        global $currentYontif;
+        $parshaThisWeekBool = is_null($result);
+        if ( $parshaThisWeekBool == true){
+            print "There is no Parsha this week because of $currentYontif";
+        }
+            else{?>
         <div class="header2">
             <h1 class="bigHeader2">
                 <?php
@@ -66,7 +73,8 @@
         </div>
         </div>
 
-
+<?php
+};?>
         <!-- bottom footer -->
         <footer>
             <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem

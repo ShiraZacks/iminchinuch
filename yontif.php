@@ -11,10 +11,24 @@
     <?php include 'menu.php'; ?>
 </head>
 
+
 <body>
+<?php 
+require 'vendor/autoload.php';
+include 'dbconnect.php';
 
+//gets this week's parsha in variable named $currentParsha
+use Zman\Zman;
+
+$today = new DateTime();
+$currentYontif = Zman::parse('December 17, 2017')->isYuntif();
+
+if ($currentYontif == true){
+    print "yup!";}else{
+        print "nope!";
+    }?>
     <h3>This page is under construction. Sorry!!</h3>
-
+<p><?php echo $currentYontif; ?></p>
     <div class="yontif">
         <div class="header2">
             <h1 class="bigHeader2">yontif coming up</h1>
