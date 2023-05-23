@@ -19,6 +19,9 @@
 </head>
 
 <body>
+<div class="pageContainer">
+<div class="contentWrap">
+
     <!-- Header -->
     <header class="header">
         <h1 class="bigHeader">I'M IN CHINUCH</h1>
@@ -80,12 +83,15 @@
     <div class="bottomBar">
         <h1 class="bottomWords">Words To Live By: A day without laughing is a day wasted.</h1>
     </div>
+    </div>
 
     <!-- bottom footer -->
     <footer>
         <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
             is perfect!</p>
     </footer>
+</div>
+
 </body>
 
 </html>

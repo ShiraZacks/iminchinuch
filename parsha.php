@@ -12,6 +12,9 @@
 </head>
 
 <body>
+<div class="pageContainer">
+<div class="contentWrap">
+    
     <?php
     require 'vendor/autoload.php';
     include 'dbconnect.php';
@@ -42,7 +45,7 @@
     $result = mysqli_fetch_array($parshaInfo);
     ?>
 
-    <body>
+
         <?php
         global $currentYontif;
         $parshaThisWeekBool = is_null($result);
@@ -71,9 +74,7 @@
             </p>
         </div>
         </div>
-        </div>
-
-<?php
+]<?php
 };?>
         <!-- bottom footer -->
         <footer>
@@ -81,6 +82,7 @@
                 is perfect!</p>
         </footer>
 
+        </div>
 
     </body>
 

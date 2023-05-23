@@ -13,6 +13,8 @@
 
 
 <body>
+<div class="pageContainer">
+<div class="contentWrap">
 
     <h3>This page is under construction. Sorry!!</h3>
     <div class="yontif">
@@ -24,12 +26,14 @@
             <p class="firstSmall2">halachos or stuff like that</p>
         </div>
     </div>
-
+    </div>
     <!-- bottom footer -->
     <footer>
         <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
             is perfect!</p>
     </footer>
+</div>
+
 </body>
 
 </html>

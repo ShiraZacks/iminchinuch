@@ -107,6 +107,9 @@ $result3 = mysqli_fetch_array($monthMore);
 
 
 <body>
+<div class="pageContainer">
+<div class="contentWrap">
+
     <div class="header2">
         <h1 class="bigHeader2">
             <?php
@@ -127,12 +130,12 @@ $result3 = mysqli_fetch_array($monthMore);
         </p>
     </div>
     </div>
-
     <!-- bottom footer -->
     <footer>
         <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
             is perfect!</p>
     </footer>
+    </div>
 
 </body>
 

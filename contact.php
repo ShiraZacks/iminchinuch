@@ -12,7 +12,8 @@
 </head>
 
 <body>
-
+<div class="pageContainer">
+<div class="contentWrap">
 
 
     <!-- First section of text -->
@@ -146,11 +147,14 @@
 
 
     </div>
+
     <!-- bottom footer -->
     <footer>
         <p class="footer">Website created by Shira Zacks. Please <a href="contact">contact me</a> if there are any mistakes; only Hashem
             is perfect!</p>
     </footer>
+    </div>
+
 </body>
 
 </html>
