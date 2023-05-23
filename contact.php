@@ -76,25 +76,25 @@
             <?php echo ((!empty($errorMessage)) ? $errorMessage : '') ?>
             <p>
                 <label class="formLabel">Name:</label>
-                <input name="name" type="text" class="formInput"/>
+                <input name="name" type="text" class="formInput" />
             </p>
             <p>
                 <label class="formLabel">Email Address:</label>
-                <input style="cursor: pointer;" name="email" type="text" class="formInput"/>
+                <input style="cursor: pointer;" name="email" type="text" class="formInput" />
             </p>
             <p>
                 <label class="formLabel">Message:</label>
                 <textarea name="message" class="formInput"></textarea>
             </p>
             <p>
-                <label class="formLabel formText">Do you want a response?</label><br/>
+                <label class="formLabel formText">Do you want a response?</label><br />
                 <label for="Yes" class="formLabel">Yes!</label>
-                <input type="radio" name="response" value="Yes"class="formInput"><br/>
+                <input type="radio" name="response" value="Yes" class="formInput"><br />
                 <label for="Yes" class="formLabel">Nope!</label>
                 <input type="radio" name="response" value="No" class="formInput">
             </p>
             <p class="submitButton">
-                <input type="submit" value="Send" class="formSend"/>
+                <input type="submit" value="Send" class="formSend" />
             </p>
         </form>
 
