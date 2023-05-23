@@ -10,7 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
     <link rel="stylesheet" href="style.css?<?= time() ?>">
-    <?php include 'menu.php'; ?>
+    <?php include 'menu.php';
+    require 'vendor/autoload.php';
+    include 'dbconnect.php';
+    //gets this week's parsha in variable named $currentParsha
+    use Zman\Zman;
+    ?>
 </head>
 
 <body>
@@ -48,9 +53,14 @@
                 <p id="date" class="secondSmall">
                     <?php
                     include 'hebrewDate.php';
-                    getHebrewDate(); ?>
-                    <div><?php include 'davening.php';?></div>
-                    
+                    getHebrewDate();
+                    global $today;
+                    $roshChodesh = Zman::parse($today)->isRoshChodesh();
+                    if ($roshChodesh == true) {
+                        print " It's Rosh Chodesh - don't forget a Rosh Chodesh treat!";
+                    }; ?>
+                <div><?php include 'davening.php'; ?></div>
+
                 </p>
             </div>
         </div>
