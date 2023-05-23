@@ -256,7 +256,7 @@ hr {
 
 /*bottom bar*/
 .bottomBar {
-    width: 100%;
+    margin-right: 15px;
     padding: 25px;
     background-color: #f44336;
     opacity: 60%;
@@ -271,17 +271,14 @@ hr {
 }
 
 .footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     text-align: center;
     color: white;
     padding: 10px;
+    margin-right: 15px;
     background-color: #f44336;
 }
 @media only screen and (max-width:992px) {
-    .footer{
+    .footer, .bottomBar{
         width:80%; 
         margin: 0 auto;
     }
@@ -394,14 +391,15 @@ div.hebcal-container div div.hebcal-results .holiday {
     display: none
 }
 
-/*
-*this is to get rid of the formfacade button on the contact page. if it works thats cool, otherwise thats also cool
-*/
-
-img[loading]{
-    display: none !important;
+/* form on contact page */
+.formLabel{
+    width: 20em;
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    vertical-align: top;
 }
-
-button[onclick="location.href"]{
-    display: none !important;
+.formInput{
+    resize:vertical;
+    
 }
