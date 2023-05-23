@@ -276,6 +276,7 @@ hr {
     padding: 10px;
     margin-right: 15px;
     background-color: #f44336;
+    bottom: 0em;
 }
 
 @media only screen and (max-width:992px) {
@@ -432,6 +433,8 @@ input[type='radio'] {
     cursor: pointer;
     word-wrap: normal;
     text-align: center;
+    height: 3em;
+    width: 7em;
 }
 
 .formSend:hover {
