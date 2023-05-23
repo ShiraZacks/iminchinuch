@@ -87,14 +87,14 @@
                 <textarea name="message" class="formInput"></textarea>
             </p>
             <p>
-                <label class="formLabel">Do you want a response?</label><br/>
+                <label class="formLabel formText">Do you want a response?</label><br/>
                 <label for="Yes" class="formLabel">Yes!</label>
                 <input type="radio" name="response" value="Yes"class="formInput"><br/>
                 <label for="Yes" class="formLabel">Nope!</label>
                 <input type="radio" name="response" value="No" class="formInput">
             </p>
-            <p>
-                <input type="submit" value="Send" />
+            <p class="submitButton">
+                <input type="submit" value="Send" class="formSend"/>
             </p>
         </form>
 

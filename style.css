@@ -277,9 +277,12 @@ hr {
     margin-right: 15px;
     background-color: #f44336;
 }
+
 @media only screen and (max-width:992px) {
-    .footer, .bottomBar{
-        width:80%; 
+
+    .footer,
+    .bottomBar {
+        width: 80%;
         margin: 0 auto;
     }
 }
@@ -321,8 +324,8 @@ hr {
 /*
 * this is for my email
 *
-*/
-.email{
+
+.email {
     color: #757575;
     width: fit-content;
 }
@@ -335,7 +338,6 @@ hr {
     right: 0;
     width: 0;
     height: 15px;
-    /* top: -10px; */
     background-color: #f4433642;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -347,7 +349,7 @@ hr {
         width: 100%;
     }
 }
-
+*/
 
 
 /* this is for the hebcal in index, shabbos times etc */
@@ -391,15 +393,61 @@ div.hebcal-container div div.hebcal-results .holiday {
     display: none
 }
 
+
 /* form on contact page */
-.formLabel{
+#contact-form {
+    width: fit-content;
+    text-align: center;
+}
+
+.formLabel {
     width: 20em;
     float: left;
     text-align: right;
     margin-right: 15px;
     vertical-align: top;
 }
+
+.formInput {
+    resize: vertical;
+    width: 40em;
+}
+
+input[type='radio'] {
+    width: 1em;
+    display: block;
+    accent-color: #f44336;
+}
+
+.formInput:focus {
+    background-color: #f96e64;
+    color: white;
+}
+
+.formSend {
+    border: white;
+    vertical-align: middle;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    word-wrap: normal;
+    text-align: center;
+}
+
+.formSend:hover {
+    background-color: white;
+    color: #f44336;
+    border: solid #f44336;
+}
+/* form on contact page responsive*/
+@media only screen and (max-width:992px) {
+.formLabel {
+    width: 10em;
+}
 .formInput{
-    resize:vertical;
-    
+    width: 10em;
+}
+.formText{
+    width: fit-content;
+}
 }
