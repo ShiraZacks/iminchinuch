@@ -20,17 +20,10 @@ body {
     overflow-x: hidden;
 }
 
-.pageContainer {
-    min-height: 100%;
-}
-
-.contentWrap {
-    padding-bottom: 50px;
-}
 
 /*topBar*/
 .topBar {
-    z-index: 0;
+    z-index: 1;
     top: 0px;
     left: 0pt;
     display: inline-block;
@@ -281,10 +274,11 @@ hr {
 }
 
 .footer {
-    position: absolute;
+    position: sticky;
     right: 0;
     bottom: 0;
     left: 0;
+    padding: 10px;
     color: white;
     background-color: #f44336;
 }
