@@ -74,7 +74,7 @@
             </p>
         </div>
         </div>
-]<?php
+<?php
 };?>
         <!-- bottom footer -->
         <footer>
