@@ -34,17 +34,6 @@ function nextYontif($dates, $findate)
     }
     return end($newDates);
 }
-/*
-$values = nextYontif($dates, date($today));
-
-echo date('Y-m-d', $values);
-
-echo "<pre>";
-print_r(array_keys($dates, $values));
-echo "</pre>";
-
-
-*/
 
 $date = $today;
 $allDates = array( //have all yomim tovim like this, with hebrew name, english name, and hebrew date
@@ -58,13 +47,7 @@ $allDates = array( //have all yomim tovim like this, with hebrew name, english n
     array('שבואות', 'Shavuos', 'ו סיון')
 
 );
-print_r($allDates[1][0]); //prints סוכות
 
 
+print_r($allDates[1][0]); //prints סוכות to console
 
-
-/*
-foreach ($results['data'] as $result) {
-    echo $results['data'][1]['type'];
-}
-*/
