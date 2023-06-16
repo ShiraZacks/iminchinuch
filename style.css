@@ -38,7 +38,7 @@ body {
 }
 
 .under_the_menu {
-    height: 70px;
+    height: 80px;
 }
 
 /*buttons on menu*/
@@ -160,7 +160,7 @@ h6 {
 .header {
     padding: 150px 15px;
     background-color: #f44336;
-    margin-right: 15px;
+    margin: 0 15px;
     text-align: center;
     color: white;
 }
