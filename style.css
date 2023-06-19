@@ -298,7 +298,7 @@ hr {
 .header2 {
     padding: 100px 15px;
     background-color: #f44336;
-    margin-right: 15px;
+    margin: 15px;
     text-align: center;
     color: white;
 }
@@ -329,7 +329,7 @@ hr {
 
 
 /* this is for the hebcal in index, shabbos times etc */
-
+ 
 div.hebcal-container {
     text-align: center;
     font-family: "Gill Sans MT", "Gill Sans", Arial, Helvetica, sans-serif;
@@ -368,7 +368,6 @@ div.hebcal-container div div.hebcal-results .parashat {
 div.hebcal-container div div.hebcal-results .holiday {
     display: none
 }
-
 
 /* form on contact page */
 #contact-form {
