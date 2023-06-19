@@ -1,7 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 include 'dbconnect.php';
-//gets this week's parsha in variable named $currentParsha
 use Zman\Zman;
 
 $today = Zman::now();
