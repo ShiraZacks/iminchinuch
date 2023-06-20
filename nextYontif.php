@@ -40,13 +40,6 @@ $date = $today;
 $allDates = array( //have all yomim tovim like this, with hebrew name, english name, and hebrew date
     array('שבואות', 'Shavuos', 'ו סיון'),
     array('סוכות', 'Sukkos', 'טו תשרי'),
-    array('שבואות', 'Shavuos', 'ו סיון'),
-    array('שבואות', 'Shavuos', 'ו סיון'),
-    array('שבואות', 'Shavuos', 'ו סיון'),
-    array('שבואות', 'Shavuos', 'ו סיון'),
-    array('שבואות', 'Shavuos', 'ו סיון'),
-    array('שבואות', 'Shavuos', 'ו סיון')
-
 );
 
 
