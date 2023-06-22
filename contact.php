@@ -22,7 +22,7 @@
     <div class="header2">
         <h1 class="bigHeader2">Did you enjoy the latest update?</h1>
         <h2 class="bigHeader2">Did you find a mistake?</h2><!-- TODO fix the text size-->
-        <h3 class="bigHeader2">Let me know!</h3>
+        <h3 class="bigHeader2">Only Hashem is perfect! Let me know!</h3>
     </div>
 
 
