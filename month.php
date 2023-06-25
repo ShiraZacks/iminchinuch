@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="style.css?<?= time() ?>">
     <?php include 'menu.php'; ?>
 </head>
@@ -67,7 +70,7 @@ switch ($monthNum) {
     case 9:
         $monthHebrew = mysqli_query($conn, 'SELECT monthHebrew FROM `month` WHERE id=9') or die();
         $monthAbout = mysqli_query($conn, 'SELECT monthAbout FROM `month` WHERE id=9') or die();
-        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=9') or die(); 
+        $monthMore = mysqli_query($conn, 'SELECT monthMore FROM `month` WHERE id=9') or die();
         break;
 
     case 10:
@@ -107,34 +110,34 @@ $result3 = mysqli_fetch_array($monthMore);
 
 
 <body>
-<div class="pageContainer">
-<div class="contentWrap">
+    <div class="pageContainer">
+        <div class="contentWrap">
 
-    <div class="header2">
-        <h1 class="bigHeader2">
-            <?php
-            print $result1['monthHebrew'];
-            ?>
-        </h1>
-    </div>
-    <div class="firstMain2">
-        <h5 class="firstBold2">
-        <?php
-            print $result2['monthAbout'];
-            ?>
-        </h5>
-        <p class="firstSmall2">
-        <?php
-            print $result3['monthMore'];
-            ?>
-        </p>
-    </div>
-    </div>
-    <!-- bottom footer -->
-    <footer>
-        <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
-            is perfect!</p>
-    </footer>
+            <div class="header2">
+                <h1 class="bigHeader2">
+                    <?php
+                    print $result1['monthHebrew'];
+                    ?>
+                </h1>
+            </div>
+            <div class="firstMain2">
+                <h5 class="firstBold2">
+                    <?php
+                    print $result2['monthAbout'];
+                    ?>
+                </h5>
+                <p class="firstSmall2">
+                    <?php
+                    print $result3['monthMore'];
+                    ?>
+                </p>
+            </div>
+        </div>
+        <!-- bottom footer -->
+        <footer>
+            <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
+                is perfect!</p>
+        </footer>
     </div>
 
 </body>
