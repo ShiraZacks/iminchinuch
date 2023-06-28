@@ -11,9 +11,8 @@ echo "Current Jewish Year: $year    ";
 $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString();  //takes current jewish year and returns string of next yontif
 $roshHashanaDate = strtotime($roshHashanaString);                                  //turns string from above into date jd style of just numbers, not readable
 $roshHashana = date('m/d/Y', $roshHashanaDate);                                    //turns it into readable date in numbers
-echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
-echo "    $roshHashanaDate    ";
-
+echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                    //currently returns past date if it happened this year already
+//                                                                                 //need to figure out how to change that, so if it already happened it adds a year to the $year variable
 $yomKippurString = Zman::dayOfYomKippur($year)->toFormattedDateString();
 $yomKippurDate = strtotime($yomKippurString);
 $yomKippur = date('m/d/Y', $yomKippurDate);
@@ -23,11 +22,11 @@ $sukkosString = Zman::firstDayOfSukkos($year)->toFormattedDateString();
 $sukkosDate = strtotime($sukkosString);
 $sukkos = date('m/d/Y', $sukkosDate);
 echo "The date of the upcoming Sukkos is $sukkos  ";
-/*
-$shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
-$shavuosDate = strtotime($shavuosString);
-$shavuos = date('m/d/Y', $shavuosDate);
-echo "The date of the upcoming Shavuos is $shavuos";
+
+$shminiAtzeresString = Zman::dayOfShminiAtzeres($year)->toFormattedDateString();
+$shminiAtzeresDate = strtotime($shminiAtzeresString);
+$shminiAtzeres = date('m/d/Y', $shminiAtzeresDate);
+echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres";
 /*
 $shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
 $shavuosDate = strtotime($shavuosString);
