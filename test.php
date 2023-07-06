@@ -26,25 +26,45 @@ echo "The date of the upcoming Sukkos is $sukkos  ";
 $shminiAtzeresString = Zman::dayOfShminiAtzeres($year)->toFormattedDateString();
 $shminiAtzeresDate = strtotime($shminiAtzeresString);
 $shminiAtzeres = date('m/d/Y', $shminiAtzeresDate);
-echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres";
+echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres   ";
+
+$simchasTorahString = Zman::dayOfSimchasTorah($year)->toFormattedDateString();
+$simchasTorahDate = strtotime($simchasTorahString);
+$simchasTorah = date('m/d/Y', $simchasTorahDate);
+echo "The date of the upcoming Simchas Torah is $simchasTorah   ";
+
+$chanukaString = Zman::firstDayOfChanuka($year)->toFormattedDateString();
+$chanukaDate = strtotime($chanukaString);
+$chanuka = date('m/d/Y', $chanukaDate);
+echo "The date of the upcoming Chanuka is $chanuka   ";
+
+$tuBishvatString = Zman::dayOfTuBishvat($year)->toFormattedDateString();
+$tuBishvatDate = strtotime($tuBishvatString);
+$tuBishvat = date('m/d/Y', $tuBishvatDate);
+echo "The date of the upcoming Tu Bishvat is $tuBishvat   ";
 /*
 $shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
 $shavuosDate = strtotime($shavuosString);
 $shavuos = date('m/d/Y', $shavuosDate);
-echo "The date of the upcoming Shavuos is $shavuos";
+echo "The date of the upcoming Shavuos is $shavuos   ";
 /*
 $shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
 $shavuosDate = strtotime($shavuosString);
 $shavuos = date('m/d/Y', $shavuosDate);
-echo "The date of the upcoming Shavuos is $shavuos";
+echo "The date of the upcoming Shavuos is $shavuos   ";
 /*
 $shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
 $shavuosDate = strtotime($shavuosString);
 $shavuos = date('m/d/Y', $shavuosDate);
-echo "The date of the upcoming Shavuos is $shavuos";
+echo "The date of the upcoming Shavuos is $shavuos   ";
 /*
 $shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
 $shavuosDate = strtotime($shavuosString);
 $shavuos = date('m/d/Y', $shavuosDate);
-echo "The date of the upcoming Shavuos is $shavuos";
+echo "The date of the upcoming Shavuos is $shavuos   ";
+/*
+$shavuosString = Zman::firstDayOfShavuos($year)->toFormattedDateString();
+$shavuosDate = strtotime($shavuosString);
+$shavuos = date('m/d/Y', $shavuosDate);
+echo "The date of the upcoming Shavuos is $shavuos   ";
 */
