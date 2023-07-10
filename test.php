@@ -12,7 +12,7 @@ $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString()
 $roshHashanaDate = strtotime($roshHashanaString);                                  //turns string from above into date jd style of just numbers, not readable
 $roshHashana = date('m/d/Y', $roshHashanaDate);                                    //turns it into readable date in numbers
 echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                    //currently returns past date if it happened this year already
-//                                                                                 //need to figure out how to change that, so if it already happened it adds a year to the $year variable
+//                                                                                 // TODO need to figure out how to change that, so if it already happened it adds a year to the $year variable
 $yomKippurString = Zman::dayOfYomKippur($year)->toFormattedDateString();
 $yomKippurDate = strtotime($yomKippurString);
 $yomKippur = date('m/d/Y', $yomKippurDate);
@@ -53,7 +53,7 @@ $shushanPurimDate = strtotime($shushanPurimString);
 $shushanPurim = date('m/d/Y', $shushanPurimDate);
 echo "The date of the upcoming Shushan Purim is $shushanPurim   ";
 /*
-$purimKattanString = Zman::dayOfPurimKattan($year)->toFormattedDateString(); //make purim kattan work if not leap year
+$purimKattanString = Zman::dayOfPurimKattan($year)->toFormattedDateString(); // TODO make purim kattan work if not leap year
 $purimKattanDate = strtotime($purimKattanString);
 $purimKattan = date('m/d/Y', $purimKattanDate);
 if($month === 6 && !isJewishLeapYear($year)){
@@ -102,4 +102,10 @@ $tishaBavDate = strtotime($tishaBavString);
 $tishaBav = date('m/d/Y', $tishaBavDate);
 echo "The date of the upcoming Tisha Bav is $tishaBav   ";
 
-//18 different yontifs
+if( Zman::parse($today)->isAseresYimeiTeshuva() == true){
+    echo "We are currently in the time of the Aseres Yemei Teshuva.";
+}else{
+    echo "Not Aseres Yemei Teshuva";
+};
+
+//18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days.
