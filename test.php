@@ -108,6 +108,4 @@ if( Zman::parse($today)->isAseresYimeiTeshuva() == true){
     echo "Not in the Aseres Yemei Teshuva";
 };
 
-//this is a test.
-
 //18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days.
