@@ -105,7 +105,9 @@ echo "The date of the upcoming Tisha Bav is $tishaBav   ";
 if( Zman::parse($today)->isAseresYimeiTeshuva() == true){
     echo "We are currently in the time of the Aseres Yemei Teshuva.";
 }else{
-    echo "Not Aseres Yemei Teshuva";
+    echo "Not in the Aseres Yemei Teshuva";
 };
+
+
 
 //18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days.
