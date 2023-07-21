@@ -17,15 +17,13 @@
 <body>
     <div class="header2">
         <h1 class="bigHeader2">
-            Thanks for contacting me!
+            Thanks for contacting me! I look foward to reading your feedback😊
         </h1>
     </div>
 
 <!-- bottom footer -->
-<footer>
-    <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
-        is perfect!</p>
-</footer>
+<?php include "footer.php"; ?>
+
 
 </body>
 

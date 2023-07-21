@@ -31,10 +31,8 @@
             </div>
         </div>
         <!-- bottom footer -->
-        <footer>
-            <p class="footer">Website created by Shira Zacks. Please <a href="contact.php">contact me</a> if there are any mistakes; only Hashem
-                is perfect!</p>
-        </footer>
+        <?php include "footer.php"; ?>
+
     </div>
 
 </body>
