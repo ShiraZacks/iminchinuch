@@ -65,7 +65,7 @@
 
                             header('Location: thankYouForm.php');
                     } else {
-                        $errorMessage = 'Oops, something went wrong. Please try again later';
+                        $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at misszacks@iminchinuch.org';
                     }
                 } else {
 
@@ -84,7 +84,7 @@
                     </p>
                     <p>
                         <label class="formLabel">Email Address:</label>
-                        <input style="cursor: pointer;" name="email" type="text" class="formInput" />
+                        <input name="email" type="text" class="formInput" />
                     </p>
                     <p>
                         <label class="formLabel">Message:</label>
@@ -152,10 +152,7 @@
             </div>
 
             <!-- bottom footer -->
-            <footer>
-                <p class="footer">Website created by Shira Zacks. Please <a href="contact">contact me</a> if there are any mistakes; only Hashem
-                    is perfect!</p>
-            </footer>
+            <?php include "footer.php"; ?>
         </div>
 
 </body>
