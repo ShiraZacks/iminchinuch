@@ -10,17 +10,20 @@ function test()
 
     $today = date("m/d/Y");
     $year = Zman::parse($today)->jewishYear;
-    echo "Current Jewish Year: $year    ";
+    echo "Current Jewish Year: $year. ";
 
-    $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString();  //takes current jewish year and returns string of next yontif
-    $roshHashanaDate = strtotime($roshHashanaString);                                  //turns string from above into date jd style of just numbers, not readable
-    $roshHashana = date('m/d/Y', $roshHashanaDate);                                    //turns it into readable date in numbers
-    if ($roshHashana > $today) {                                                       //IF PASSED
-        $year = $year + 1;                                                             //ADD A YEAR
-        $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString();  
-        $roshHashanaDate = strtotime($roshHashanaString);                              //DOES IT AGAIN
-        $roshHashana = date('m/d/Y', $roshHashanaDate);
-        echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                //RETURNS CORRECT DATE, {NEXT YEAR}ELSE{THIS YEAR}
+    //takes current jewish year and returns string of next yontif
+    //turns string from above into date jd style of just numbers, not readable
+    //turns it into readable date in numbers
+    $roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($year)->toFormattedDateString()));
+    //if date already passed
+    if ($roshHashana > $today) {
+        //add a year
+        $year = $year + 1;
+        //runs code again
+        $roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($year)->toFormattedDateString()));
+        //RETURNS CORRECT DATE, {NEXT YEAR}ELSE{THIS YEAR}
+        echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
     } else {
         echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
     }
