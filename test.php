@@ -1,8 +1,10 @@
 <?php
+
 require 'vendor/autoload.php';
 include 'dbconnect.php';
 
 use Zman\Zman;
+function test(){
 
 $today = date("m/d/Y");
 $year = Zman::parse($today)->jewishYear;
@@ -11,8 +13,21 @@ echo "Current Jewish Year: $year    ";
 $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString();  //takes current jewish year and returns string of next yontif
 $roshHashanaDate = strtotime($roshHashanaString);                                  //turns string from above into date jd style of just numbers, not readable
 $roshHashana = date('m/d/Y', $roshHashanaDate);                                    //turns it into readable date in numbers
-echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                    //currently returns past date if it happened this year already
+if ($roshHashana > $today) {
+    $year=$year+1;
+    $roshHashanaString = Zman::firstDayOfRoshHashana($year)->toFormattedDateString();  //takes current jewish year and returns string of next yontif
+    $roshHashanaDate = strtotime($roshHashanaString);                                  //turns string from above into date jd style of just numbers, not readable
+    $roshHashana = date('m/d/Y', $roshHashanaDate); 
+    echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                    //currently returns past date if it happened this year already
+}   else{                 
+            
+    echo "The date of the upcoming Rosh Hashana is $roshHashana  ";                    //currently returns past date if it happened this year already
+}                
 //                                                                                 // TODO need to figure out how to change that, so if it already happened it adds a year to the $year variable
+};
+
+test();
+/*
 $yomKippurString = Zman::dayOfYomKippur($year)->toFormattedDateString();
 $yomKippurDate = strtotime($yomKippurString);
 $yomKippur = date('m/d/Y', $yomKippurDate);
@@ -61,7 +76,7 @@ if($month === 6 && !isJewishLeapYear($year)){
 }else{
     echo "The date of the upcoming Purim Kattan is $purimKattan   ";
 }
-*/
+*//*
 $pesachString = Zman::firstDayOfPesach($year)->toFormattedDateString();
 $pesachDate = strtotime($pesachString);
 $pesach = date('m/d/Y', $pesachDate);
@@ -108,4 +123,5 @@ if( Zman::parse($today)->isAseresYimeiTeshuva() == true){
     echo "Not in the Aseres Yemei Teshuva";
 };
 
-//18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days.
+//18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days, sefira.
+*/
