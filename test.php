@@ -5,56 +5,73 @@ include 'dbconnect.php';
 
 use Zman\Zman;
 
-function test()
-{
 
-    $today = date("m/d/Y");
-    $year = Zman::parse($today)->jewishYear;
-    echo "Current Jewish Year: $year. ";
+$today = Zman::now();
+$year = Zman::parse($today)->jewishYear;
+$yearNext = $year + 1;
 
-    //takes current jewish year and returns string of next yontif
-    //turns string from above into date jd style of just numbers, not readable
-    //turns it into readable date in numbers
-    $roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($year)->toFormattedDateString()));
-    //if date already passed
-    if ($roshHashana > $today) {
-        //add a year
-        $year = $year + 1;
-        //runs code again
-        $roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($year)->toFormattedDateString()));
-        //RETURNS CORRECT DATE, {NEXT YEAR}ELSE{THIS YEAR}
-        echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
-    } else {
-        echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
-    }
+echo "Current Jewish Year: $year. ";
+
+//takes current jewish year and returns string of next yontif, turns string to date jd style of just numbers, not readable, turns it into readable date in numbers
+$roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($year)->toFormattedDateString()));
+//if date already passed, add a year and run code again.
+if ($roshHashana < $today) {
+    $roshHashana = date('m/d/Y', strtotime(Zman::firstDayOfRoshHashana($yearNext)->toFormattedDateString()));
+    echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
+} else {
+    echo "The date of the upcoming Rosh Hashana is $roshHashana  ";
 };
 
-test();
-/*
-$yomKippurString = Zman::dayOfYomKippur($year)->toFormattedDateString();
-$yomKippurDate = strtotime($yomKippurString);
-$yomKippur = date('m/d/Y', $yomKippurDate);
-echo "The date of the upcoming Yom Kippur is $yomKippur  ";
+$yomKippur = date('m/d/Y', strtotime(Zman::dayOfYomKippur($year)->toFormattedDateString()));
+if ($yomKippur < $today) {
+    $yomKippur = date('m/d/Y', strtotime(Zman::dayOfYomKippur($yearNext)->toFormattedDateString()));
+    echo "The date of the upcoming Yom Kippur is $yomKippur  ";
+} else {
+    echo "The date of the upcoming Yom Kippur is $yomKippur  ";
+};
 
-$sukkosString = Zman::firstDayOfSukkos($year)->toFormattedDateString();
-$sukkosDate = strtotime($sukkosString);
-$sukkos = date('m/d/Y', $sukkosDate);
-echo "The date of the upcoming Sukkos is $sukkos  ";
+$sukkos = date('m/d/Y', strtotime(Zman::firstDayOfSukkos($year)->toFormattedDateString()));
+if ($sukkos < $today) {
+    $sukkos = date('m/d/Y', strtotime(Zman::firstDayOfSukkos($yearNext)->toFormattedDateString()));
+    echo "The date of the upcoming Sukkos is $sukkos  ";
+} else {
+    echo "The date of the upcoming Sukkos is $sukkos  ";
+};
 
-$shminiAtzeresString = Zman::dayOfShminiAtzeres($year)->toFormattedDateString();
-$shminiAtzeresDate = strtotime($shminiAtzeresString);
-$shminiAtzeres = date('m/d/Y', $shminiAtzeresDate);
-echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres   ";
+$shminiAtzeres = date('m/d/Y', strtotime(Zman::dayOfShminiAtzeres($year)->toFormattedDateString()));
+if ($shminiAtzeres < $today) {
+    $shminiAtzeres = date('m/d/Y', strtotime(Zman::dayOfShminiAtzeres($yearNext)->toFormattedDateString()));
+    echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres   ";
+} else {
+    echo "The date of the upcoming Shmini Atzeres is $shminiAtzeres   ";
+};
 
-$simchasTorahString = Zman::dayOfSimchasTorah($year)->toFormattedDateString();
-$simchasTorahDate = strtotime($simchasTorahString);
-$simchasTorah = date('m/d/Y', $simchasTorahDate);
+$simchasTorah = date('m/d/Y', strtotime(Zman::dayOfSimchasTorah($year)->toFormattedDateString()));
+if ($simchasTorah < $today) {
+    $simchasTorah = date('m/d/Y', strtotime(Zman::dayOfSimchasTorah($yearNext)->toFormattedDateString()));
 echo "The date of the upcoming Simchas Torah is $simchasTorah   ";
+} else {
+echo "The date of the upcoming Simchas Torah is $simchasTorah   ";
+};
 
-$chanukaString = Zman::firstDayOfChanuka($year)->toFormattedDateString();
-$chanukaDate = strtotime($chanukaString);
-$chanuka = date('m/d/Y', $chanukaDate);
+$chanuka = date('m/d/Y', strtotime(Zman::firstDayOfChanuka($year)->toFormattedDateString()));
+if ($chanuka < $today) {
+    $chanuka = date('m/d/Y', strtotime(Zman::firstDayOfChanuka($yearNext)->toFormattedDateString()));
 echo "The date of the upcoming Chanuka is $chanuka   ";
+} else {
+echo "The date of the upcoming Chanuka is $chanuka   ";
+};
+
+$tuBishvat = date('m/d/Y', strtotime(Zman::dayOfTuBishvat($year)->toFormattedDateString()));
+if ($tuBishvat < $today) {
+    $tuBishvat = date('m/d/Y', strtotime(Zman::dayOfTuBishvat($yearNext)->toFormattedDateString()));
+echo "The date of the upcoming Tu Bishvat is $tuBishvat   ";
+} else {
+echo "The date of the upcoming Tu Bishvat is $tuBishvat   ";
+};
+
+/*
+
 
 $tuBishvatString = Zman::dayOfTuBishvat($year)->toFormattedDateString();
 $tuBishvatDate = strtotime($tuBishvatString);
