@@ -143,13 +143,12 @@ if ($shivaAsarBitamuz < $today) {
 };
 
 $tishaBav = (date('m/d/Y', strtotime(Zman::dayOfTishaBav($year)->toFormattedDateString())));
-if ($tishaBav < $today) {
+if ($tishaBav <= $today) {
     $tishaBavNext = (date('m/d/Y', strtotime(Zman::dayOfTishaBav($yearNext)->toFormattedDateString())));
     echo "The date of the upcoming Tisha Bav is $tishaBavNext  ";
 } else {
     echo "The date of the upcoming Tisha Bav is $tishaBav  ";
 };
-echo $tishaBav;
 
 if (Zman::parse($today)->isAseresYimeiTeshuva() == true) {
     echo "   We are currently in the time of the Aseres Yemei Teshuva.";
@@ -158,7 +157,7 @@ if (Zman::parse($today)->isAseresYimeiTeshuva() == true) {
 };
 
 
-$yontifs = array(
+$allDates = array(   //changed from yontifs
     $roshHashana,
     $tzomGedaliah,
     $yomKippur,
@@ -177,17 +176,29 @@ $yontifs = array(
     $tishaBav,
 );
 
-
-foreach ($yontifs as $yontif) {
-    $dateParts = explode('/', $yontif);
-    $yontifDate = mktime(0, 0, 0, $dateParts[1], $dateParts[0], $dateParts[2]);
-    if ($yontifDate > time()) {
-        print  date('m/d/Y', $yontifDate);
-        break;
-        };
+function date_sort($a, $b)
+{
+    return strtotime($a) - strtotime($b);
 };
+usort($allDates, "date_sort");
+foreach ($allDates as $count => $dateSingle) {
+    if (strtotime($today) < strtotime($dateSingle)) {
+        $nextDate = date('m-d', strtotime($dateSingle));
+        break;
+    }
+};
+global $nextDate;
+echo $nextDate;
 
-
+//gets the next coming yontif, but not really working, returns a date that doesn't make sense.
+// foreach ($yontifs as $yontif) {
+//     $dateParts = explode('/', $yontif);
+//     $yontifDate = mktime(0, 0, 0, $dateParts[1], $dateParts[0], $dateParts[2]);
+//     if ($yontifDate > time()) {
+//         print  date('m/d/Y', $yontifDate);
+//         break;
+//         };
+// };
 //prints name of variable, not variable contents
 // function getVariableName($var)
 // {
