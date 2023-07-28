@@ -6,11 +6,11 @@ include 'dbconnect.php';
 use Zman\Zman;
 
 
-$today = Zman::now();
+$today = Zman::parse();
 $month = Zman::parse($today)->jewishMonth;
 $year = Zman::parse($today)->jewishYear;
-$yearNext = $year + 1;
-
+$yearNext = date($year + 1);
+echo $yearNext;
 echo "Current Jewish Year: $year. ";
 
 //takes current jewish year and returns string of next yontif, turns string to date jd style of just numbers, not readable, turns it into readable date in numbers
@@ -89,9 +89,9 @@ if ($shushanPurim < $today) {
 
 // if ((!isJewishLeapYear($year)) == true) {
 //     $purimKattan = date('m/d/Y', strtotime(Zman::dayOfPurimKattan($year)->toFormattedDateString()));
-//     echo "The date of the upcoming Purim Kattan is $purimKattan  ";
+//          echo "The date of the upcoming Purim Kattan is $purimKattan  ";
 // } else {
-//     echo 'Not a leap year! No Purim Kattan!  ';
+//          echo 'Not a leap year! No Purim Kattan!  ';
 // };
 
 $pesach = date('m/d/Y', strtotime(Zman::firstDayOfPesach($year)->toFormattedDateString()));
@@ -142,9 +142,9 @@ if ($shivaAsarBitamuz < $today) {
     echo "The date of the upcoming Shiva Asar Bitamuz is $shivaAsarBitamuz  ";
 };
 
-$tishaBav = date('m/d/Y', strtotime(Zman::dayOfTishaBav($year)->toFormattedDateString()));
+$tishaBav = (date('m/d/Y', strtotime(Zman::dayOfTishaBav($year)->toFormattedDateString())));
 if ($tishaBav < $today) {
-    $tishaBavNext = date('m/d/Y', strtotime(Zman::dayOfTishaBav($yearNext)->toFormattedDateString()));
+    $tishaBavNext = (date('m/d/Y', strtotime(Zman::dayOfTishaBav($yearNext)->toFormattedDateString())));
     echo "The date of the upcoming Tisha Bav is $tishaBavNext  ";
 } else {
     echo "The date of the upcoming Tisha Bav is $tishaBav  ";
@@ -152,9 +152,53 @@ if ($tishaBav < $today) {
 echo $tishaBav;
 
 if (Zman::parse($today)->isAseresYimeiTeshuva() == true) {
-    echo "We are currently in the time of the Aseres Yemei Teshuva.";
+    echo "   We are currently in the time of the Aseres Yemei Teshuva.";
 } else {
-    echo "Not in the Aseres Yemei Teshuva";
+    echo "   Not in the Aseres Yemei Teshuva";
 };
 
-//18 different yontifs, 19 with aseres yemei teshuva.  TODO need 3 weeks, 9 days, sefira.
+
+$yontifs = array(
+    $roshHashana,
+    $tzomGedaliah,
+    $yomKippur,
+    $sukkos,
+    $shminiAtzeres,
+    $simchasTorah,
+    $chanuka,
+    $tuBishvat,
+    $taanisEsther,
+    $purim,
+    $shushanPurim,
+    $pesach,
+    $pesachSheni,
+    $shavuos,
+    $shivaAsarBitamuz,
+    $tishaBav,
+);
+
+
+foreach ($yontifs as $yontif) {
+    $dateParts = explode('/', $yontif);
+    $yontifDate = mktime(0, 0, 0, $dateParts[1], $dateParts[0], $dateParts[2]);
+    if ($yontifDate > time()) {
+        print  date('m/d/Y', $yontifDate);
+        break;
+        };
+};
+
+
+//prints name of variable, not variable contents
+// function getVariableName($var)
+// {
+//     foreach ($GLOBALS as $varName => $value) {
+//         if ($value === $var) {
+//             return $varName;
+//         }
+//     }
+//     return;
+// }
+
+// print getVariableName($tishaBav);
+
+// TODO need 3 weeks, 9 days, sefira, and aseres yemei teshuva with their own things, not part of this.
