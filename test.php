@@ -160,7 +160,9 @@ if (Zman::parse($today)->isAseresYimeiTeshuva() == true) {
     echo "   Not in the Aseres Yemei Teshuva   ";
 };
 
-
+// list of all yontifs. general  idea is to go through all dates and find which one is the next one,
+// the abs lowest difference, and access that part of the database. 
+// We got this!
 $allDates = array(   //changed from yontifs
     array($roshHashana, "Rosh Hashana"),
     array($tzomGedaliah, "Tzom Gedalia"),
@@ -198,30 +200,7 @@ function dates($allDates)
 dates($allDates);
 
 
-// function date_sort($a, $b)
-// {
-//     return ($a[0]) - ($b[0]);
-// };
-// usort($allDates, "date_sort");
-// foreach ($allDates as $count => $dateSingle) {
-//     if (($today) < ($dateSingle)) {
-//         $nextDate = date('m-d', strtotime($dateSingle));
-//         break;
-//     }
-// };
-// global $nextDate;
-// echo $nextDate;
-
-//gets the next coming yontif, but not really working, returns a date that doesn't make sense.
-// foreach ($yontifs as $yontif) {
-//     $dateParts = explode('/', $yontif);
-//     $yontifDate = mktime(0, 0, 0, $dateParts[1], $dateParts[0], $dateParts[2]);
-//     if ($yontifDate > time()) {
-//         print  date('m/d/Y', $yontifDate);
-//         break;
-//         };
-// };
-//prints name of variable, not variable contents
+// prints name of variable, not variable contents
 // function getVariableName($var)
 // {
 //     foreach ($GLOBALS as $varName => $value) {
@@ -233,5 +212,7 @@ dates($allDates);
 // }
 
 // print getVariableName($tishaBav);
+
+// pretty cool:)
 
 // TODO need 3 weeks, 9 days, sefira, and aseres yemei teshuva with their own things, not part of this.  Add Tu B'av
