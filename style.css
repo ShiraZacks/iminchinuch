@@ -429,8 +429,9 @@ input[type='radio'] {
     cursor: pointer;
     text-align: center;
     font-weight: bold;
-    height: 3em;
-    width: 7em;
+    border-radius: .375rem;
+    font-size: larger;
+    padding: 10px 20px;
 }
 
 .formSend:hover {
@@ -453,4 +454,8 @@ input[type='radio'] {
     .formText {
         width: fit-content;
     }
+}
+
+.yontifOptions{
+    font-weight: bold;
 }

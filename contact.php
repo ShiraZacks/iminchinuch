@@ -98,7 +98,7 @@
                         <input type="radio" name="response" value="No" class="formInput">
                     </p>
                     <p class="submitButton">
-                        <input type="submit" value="Send" class="formSend" />
+                        <input type="submit" value="Send" class="formSend buttonStyles" />
                     </p>
                 </form>
 
