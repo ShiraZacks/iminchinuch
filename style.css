@@ -421,7 +421,7 @@ input[type='radio'] {
 }
 
 
-.formSend {
+.buttonStyles{
     vertical-align: middle;
     background-color: white;
     color: #f44336;
@@ -434,10 +434,10 @@ input[type='radio'] {
     padding: 10px 20px;
 }
 
-.formSend:hover {
+.buttonStyles:hover {
     background-color: #f44336;
     color: white;
-    border: white;
+    border: double;
     transition: .2s;
 }
 
@@ -456,6 +456,15 @@ input[type='radio'] {
     }
 }
 
+.yontifStyles{
+    display: flex;
+    width: 200px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
 .yontifOptions{
-    font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 }

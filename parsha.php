@@ -46,14 +46,10 @@
                     break;
             }
             $result = mysqli_fetch_array($parshaInfo);
-            ?>
 
-
-            <?php
-            global $currentYontif;
             $parshaThisWeekBool = is_null($result);
             if ($parshaThisWeekBool == true) {
-                print "There is no Parsha this week because of $currentYontif";
+                print "There is no Parsha this week because of Yontif!";
             } else { ?>
                 <div class="header2">
                     <h1 class="bigHeader2">
