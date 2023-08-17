@@ -29,72 +29,69 @@ use Zman\Zman;
                 <div class="header2">
                     <h1 class="bigHeader2">CHOOSE A YONTIF</h1>
                 </div>
-
-                <div class="yontifOptions">
-                    <p <?php $currentYontif = "ראש השנה" ?> class="buttonStyles yontifStyles">Rosh Hashana</p>
-                    <p <?php $currentYontif = "צום גדליה" ?> class="buttonStyles yontifStyles">Tzom Gedalia</p>
-                    <p <?php $currentYontif = "יום כפור" ?> class="buttonStyles yontifStyles">Yom Kippur</p>
-                    <p <?php $currentYontif = "סוכות" ?> class="buttonStyles yontifStyles">Sukkos</p>
-                    <p <?php $currentYontif = "שמיני עצרת" ?> class="buttonStyles yontifStyles">Shmini Atzeres</p>
-                    <p <?php $currentYontif = "שמחת תורה" ?> class="buttonStyles yontifStyles">Simchas Torah</p>
-                    <p <?php $currentYontif = "חנוכה" ?> class="buttonStyles yontifStyles">Chanuka</p>
-                    <p <?php $currentYontif = "טו בשבת" ?> class="buttonStyles yontifStyles">Tu Bishvat</p>
-                    <p <?php $currentYontif = "תענית אסתר" ?> class="buttonStyles yontifStyles">Taanis Esther</p>
-                    <p <?php $currentYontif = "פורים" ?> class="buttonStyles yontifStyles">Purim</p>
-                    <p <?php $currentYontif = "שושן פורים" ?> class="buttonStyles yontifStyles">Shushan Purim</p>
-                    <p <?php $currentYontif = "פסח" ?> class="buttonStyles yontifStyles">Pesach</p>
-                    <p <?php $currentYontif = "פסח שני" ?> class="buttonStyles yontifStyles">Pesach Sheini</p>
-                    <p <?php $currentYontif = "שבעות" ?> class="buttonStyles yontifStyles">Shavuos</p>
-                    <p <?php $currentYontif = "שבע עשר בתמוז" ?> class="buttonStyles yontifStyles">Shiva Asar Bitamuz</p>
-                    <p <?php $currentYontif = "תשע באב" ?> class="buttonStyles yontifStyles">Tisha Bav</p>
-                    <p <?php $currentYontif = "טו באב" ?> class="buttonStyles yontifStyles">Tu Bav</p>
-                    <p <?php $currentYontif = "עשרת ימי תשובה" ?> class="buttonStyles yontifStyles">Aseres Yemei Teshuva</p>
-
-                </div>
-                <!-- get each one to call that sql section, put it in the below sections. -->
-                <?php
-
-                switch ($currentYontif) {
-                    case $currentYontif:  //this uses the variable to call the sql code, super exciting it works!!!
-                        $stmt = $conn->prepare('SELECT yontifHebrew, yontifAbout, yontifDeeper FROM `yontif` WHERE yontifHebrew=?');
-                        $stmt->bind_param("s", $currentYontif);
-                        $stmt->execute();
-                        $yontifInfo = $stmt->get_result();
-
-
-                        break;
-
-                    default:
-                        print "This is still under construction! Sorry!";
-                        break;
-                }
-                $result = mysqli_fetch_array($yontifInfo);
-                ?>
-
-                <div class="header2">
-                    <h1 class="bigHeader2">
-                        <?php
-                        print $result['yontifHebrew'];
-                        ?>
-                    </h1>
-                </div>
-                <div class="firstMain2">
-                    <h5 class="firstBold2">
-                        <?php
-                        print $result['yontifAbout'];
-                        ?>
-                    </h5>
-                    <p class="firstSmall2">
-                        <?php
-                        print $result['yontifDeeper'];
-                        ?>
-                    </p>
-                </div>
+                <form action="" method="post">
+                    <div class="yontifOptions">
+                        <input type="submit" href="#header1" <?php $currentYontif = "ראש השנה" ?> class="buttonStyles yontifStyles" value="Rosh Hashana"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "צום גדליה" ?> class="buttonStyles yontifStyles" value="Tzom Gedalia"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "יום כפור" ?> class="buttonStyles yontifStyles" value="Yom Kippur"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "סוכות" ?> class="buttonStyles yontifStyles" value="Sukkos"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "שמיני עצרת" ?> class="buttonStyles yontifStyles" value="Shmini Atzeres"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "שמחת תורה" ?> class="buttonStyles yontifStyles" value="Simchas Torah"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "חנוכה" ?> class="buttonStyles yontifStyles" value="Chanuka"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "טו בשבת" ?> class="buttonStyles yontifStyles" value="Tu Bishvat"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "תענית אסתר" ?> class="buttonStyles yontifStyles" value="Taanis Esther"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "פורים" ?> class="buttonStyles yontifStyles" value="Purim"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "שושן פורים" ?> class="buttonStyles yontifStyles" value="Shushan Purim"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "פסח" ?> class="buttonStyles yontifStyles" value="Pesach"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "פסח שני" ?> class="buttonStyles yontifStyles" value="Pesach Sheini"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "שבעות" ?> class="buttonStyles yontifStyles" value="Shavuos"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "שבע עשר בתמוז" ?> class="buttonStyles yontifStyles" value="Shiva Asar Bitamuz"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "תשע באב" ?> class="buttonStyles yontifStyles" value="Tisha Bav"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "טו באב" ?> class="buttonStyles yontifStyles" value="Tu Bav"></input>
+                        <input type="submit" href="#header1" <?php $currentYontif = "עשרת ימי תשובה" ?> class="buttonStyles yontifStyles" value="Aseres Yemei Teshuva"></input>
+                </form>
+                <h1><?php echo $currentYontif; ?></h1>
             </div>
+            <!-- get each one to call that sql section, put it in the below sections. -->
+            <?php
+            switch ($currentYontif) {
+                case $currentYontif:  //this uses the variable to call the sql code, super exciting it works!!!
+                    $stmt = $conn->prepare('SELECT yontifHebrew, yontifAbout, yontifDeeper FROM `yontif` WHERE yontifHebrew=?');
+                    $stmt->bind_param("s", $currentYontif);
+                    $stmt->execute();
+                    $yontifInfo = $stmt->get_result();
+                    break;
 
+                default:
+                    print "This is still under construction! Sorry!";
+                    break;
+            }
+            $result = mysqli_fetch_array($yontifInfo);
+            ?>
 
-
+            <div class="header2" id="header1">
+                <h1 class="bigHeader2">
+                    <?php
+                    print $result['yontifHebrew'];
+                    ?>
+                </h1>
+            </div>
+            <div class="firstMain2">
+                <h5 class="firstBold2">
+                    <?php
+                    print $result['yontifAbout'];
+                    ?>
+                </h5>
+                <p class="firstSmall2">
+                    <?php
+                    print $result['yontifDeeper'];
+                    ?>
+                </p>
+            </div>
         </div>
+
+
+    </div>
 
 
 

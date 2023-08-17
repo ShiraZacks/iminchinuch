@@ -458,11 +458,15 @@ input[type='radio'] {
 
 .yontifStyles{
     display: flex;
-    width: 200px;
+    width: 250px;
     margin: 10px;
+    padding: 20px;
     align-items: center;
     justify-content: center;
+    color: #f44336;
+    text-decoration: none;
 }
+
 .yontifOptions{
         display: flex;
         flex-wrap: wrap;
