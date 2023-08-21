@@ -1,6 +1,6 @@
 <?php
-//^V^V^V^V^V^V^V^V^V^//
-//this section gets currrent Hebrew calendar date using lots of other info.
+//this section gets currrent Hebrew calendar date as $hebrewDate
+
 // Get current Gregorian date
 $gregorianDate = new DateTime();
 
@@ -9,9 +9,8 @@ $julianDay = gregoriantojd($gregorianDate->format('m'), $gregorianDate->format('
 
 // Calculate Jewish date from Julian day count
 $jDate = jdtojewish($julianDay);
-//echo $jDate,"   ";
 
-//change that str to  date
+//change str to  date
 $toTime = strtotime($jDate);
 $jewishDate = getdate($toTime);
 
@@ -34,24 +33,16 @@ $monthNames = [
 
 //get current month number
 $monthNum = $jewishDate['mon'];
+
 //get current month name in string form
 $monthStr = $monthNames[$jewishDate['mon']];
 
-// Store the final answer in a variable called "hebrewDate"
+// Store the final answer in a variable called "$hebrewDate"
 $hebrewDate = $monthStr . ' ' . $jewishDate['mday'] . ', ' . $jewishDate['year'];
 
 //-=-=-=-=-=-=-=-//
-function getHebrewDate()
-{
+// returns the hebrew date, this function is used in index.php.
+function getHebrewDate(){
     global $hebrewDate; //global gets variable from outside the function
     echo "Today is $hebrewDate!"; // Outputs todays date in "Nisan 2, 5783" format
 }
-//-=-=-=-=-=-=-=-//
-
-
-//^V^V^V^V^V^V^V^V^V^//
-
-/* Parsha Section*/
-
-// sometimes you need to add things so github doesn't show you missed a day,
-// even though you may or may not have spent the day at a baseball game.
