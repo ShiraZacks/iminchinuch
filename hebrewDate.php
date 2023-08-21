@@ -52,3 +52,6 @@ function getHebrewDate()
 //^V^V^V^V^V^V^V^V^V^//
 
 /* Parsha Section*/
+
+// sometimes you need to add things so github doesn't show you missed a day,
+// even though you may or may not have spent the day at a baseball game.
