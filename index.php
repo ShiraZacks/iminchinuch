@@ -58,8 +58,8 @@
                         <h5 class="secondBold">Looked at a calendar recently? </h5>
                         <p id="date" class="secondSmall">
                             <?php
-                            include 'hebrewDate.php';
-                            getHebrewDate();
+                            $now = Zman::now()->toFormattedJewishDateString();
+                            print("Today's date is $now" );
                             global $today;
                             $roshChodesh = Zman::parse($today)->isRoshChodesh();
                             if ($roshChodesh == true) {
