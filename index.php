@@ -16,6 +16,7 @@
     <?php include 'menu.php';
     require 'vendor/autoload.php';
     include 'dbconnect.php';
+    include 'hebrewDate.php';
     //gets this week's parsha in variable named $currentParsha
     use Zman\Zman;
     ?>
@@ -56,18 +57,18 @@
                     <div class="secondHeader">
                         <h1>Recent Updates</h1>
                         <h5 class="secondBold">Looked at a calendar recently? </h5>
-                        <p id="date" class="secondSmall">
+                        <p id="date" class="secondSmall"> 
                             <?php
-                            $now = Zman::now()->toFormattedJewishDateString();
-                            print("Today's date is $now" );
-                            global $today;
+                            global $now;
+                            echo "Today's date is ".$now;
+                            ?></p>
+                        <div><?php include 'davening.php'; 
+                        global $today;
                             $roshChodesh = Zman::parse($today)->isRoshChodesh();
                             if ($roshChodesh == true) {
                                 print " It's Rosh Chodesh - don't forget a Rosh Chodesh treat!";
-                            }; ?>
-                        <div><?php include 'davening.php'; ?></div>
+                            };?></div>
 
-                        </p>
                     </div>
                 </div>
             </div>
