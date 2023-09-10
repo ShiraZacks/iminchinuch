@@ -49,7 +49,10 @@
 
             $parshaThisWeekBool = is_null($result);
             if ($parshaThisWeekBool == true) {
-                print "There is no Parsha this week because of Yontif!";
+                print "    <div class='firstTop noParshaText'>
+                <h2 class='firstBold'>There is no Parsha this week because of Yontif!</h2>
+                <h1 class='firstBold'>😊</h1>
+            </div>"; //comeback
             } else { ?>
                 <div class="header2">
                     <h1 class="bigHeader2">
@@ -79,6 +82,7 @@
 
 
     </div>
+
 
 </body>
 
