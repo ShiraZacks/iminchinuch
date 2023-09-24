@@ -11,6 +11,7 @@ echo ' <!-- Navbar  -->
             <a href="month.php" class="buttons">This Month</a>
             <a href="yontif.php" class="buttons">Next Yom Tov</a>
             <a href="contact.php" class="buttons">Contact Me</a>
+            <a href="quotes.php" class="buttons">Quote of the Day</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -21,6 +22,7 @@ echo ' <!-- Navbar  -->
                 <li><a href="month.php" class="button">This Month</a></li>
                 <li><a href="yontif.php" class="button">Next Yom Tov</a></li>
                 <li><a href="contact.php" class="button bottom">Contact Me</a></li>
+                <li><a href="quotes.php" class="buttons">Quote of the Day</a></li>
             </ul>
         </div>
     </div>

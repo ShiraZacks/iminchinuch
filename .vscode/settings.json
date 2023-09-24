@@ -1,7 +1,10 @@
 {
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": true,
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"files.autoSave": "onFocusChange",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[php]": {
+		"editor.defaultFormatter": "kokororin.vscode-phpfmt"
+	}
 }
