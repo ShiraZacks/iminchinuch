@@ -4,6 +4,7 @@
 	"editor.formatOnSave": true,
 	"files.autoSave": "onFocusChange",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"phpfmt.php_bin": "\"C:\\xampp\\php\\php.exe\"",
 	"[php]": {
 		"editor.defaultFormatter": "kokororin.vscode-phpfmt"
 	}

@@ -30,9 +30,6 @@
             <header class="header">
                 <h1 class="bigHeader">I'M IN CHINUCH</h1>
                 <p class="middleHeader">That means I'm qualified to teach you about important stuff.</p>
-                <!-- <h5 class="middleHeader">For example....</h5>
-        <img class="headerPic" src="I_LOVE_HASHEM.jpg" alt="I LOVE HASHEM!!">
-        <p class="littleHeader">'דברים ו':ה</p> -->
             </header>
 
             <!-- First section of text -->
@@ -85,7 +82,8 @@
 
             <hr>
             <div class="bottomBar">
-                <h1 class="bottomWords">Words To Live By: A day without laughing is a day wasted.</h1>
+                <h1 class="bottomWords">Quote of the Day: A day without laughing is a day wasted.</h1>
+                <a href="quotes.php">Send me your own Quote of the day!</a>
             </div>
         </div>
 
