@@ -21,10 +21,10 @@ echo ' <!-- Navbar  -->
                 <li><a href="parsha.php" class="button">This Week\'s Parsha</a> </li>
                 <li><a href="month.php" class="button">This Month</a></li>
                 <li><a href="yontif.php" class="button">Next Yom Tov</a></li>
-                <li><a href="contact.php" class="button bottom">Contact Me</a></li>
-                <li><a href="quotes.php" class="buttons">Quote of the Day</a></li>
+                <li><a href="contact.php" class="button">Contact Me</a></li>
+                <li><a href="quotes.php" class="button bottom">Quote of the Day</a></li>
             </ul>
         </div>
     </div>
     <div class="under_the_menu"></div>
-';?>
+';
