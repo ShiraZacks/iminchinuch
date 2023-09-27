@@ -4,15 +4,15 @@
 <head>
     <title>I'M IN CHINUCH</title>
     <link rel="shortcut icon" type="image/jpeg" href="favcon.jpg" />
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?=time()?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="style.css?<?= time() ?>">
-    <?php include 'menu.php'; ?>
+    <link rel="stylesheet" type='text/css' href="style.css?<?=time()?>">
+    <?php include 'menu.php';?>
 </head>
 <!-- this part gets the text from the mySQL database -->
 <?php
@@ -105,7 +105,6 @@ $result1 = mysqli_fetch_array($monthHebrew);
 $result2 = mysqli_fetch_array($monthAbout);
 $result3 = mysqli_fetch_array($monthMore);
 
-
 ?>
 
 
@@ -116,25 +115,25 @@ $result3 = mysqli_fetch_array($monthMore);
             <div class="header2">
                 <h1 class="bigHeader2">
                     <?php
-                    print $result1['monthHebrew'];
-                    ?>
+print $result1['monthHebrew'];
+?>
                 </h1>
             </div>
             <div class="firstMain2">
                 <h5 class="firstBold2">
                     <?php
-                    print $result2['monthAbout'];
-                    ?>
+print $result2['monthAbout'];
+?>
                 </h5>
                 <p class="firstSmall2">
                     <?php
-                    print $result3['monthMore'];
-                    ?>
+print $result3['monthMore'];
+?>
                 </p>
             </div>
         </div>
         <!-- bottom footer -->
-        <?php include "footer.php"; ?>
+        <?php include "footer.php";?>
 
     </div>
 
