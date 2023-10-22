@@ -29,7 +29,7 @@ $today = new DateTime();
 $currentParsha = Zman::parse($today)->parshaHebrew;
 
 switch ($currentParsha) {
-    case $currentParsha: //this uses the variable to call the sql code, super exciting it works!!!
+    case $currentParsha: //this uses the variable to call the sql code below
         $stmt = $conn->prepare('SELECT parshaHebrew, parshaAbout, parshaDeeper FROM `parsha` WHERE parshaHebrew=?');
         $stmt->bind_param("s", $currentParsha);
         $stmt->execute();
@@ -43,7 +43,7 @@ $result = mysqli_fetch_array($parshaInfo);
 
 $parshaThisWeekBool = is_null($result);
 if ($parshaThisWeekBool == true) {
-    print "    <div class='firstTop noParshaText'>
+    print "<div class='firstTop noParshaText'>
                 <h2 class='firstBold'>There is no Parsha this week because of Yontif!</h2>
                 <h1 class='firstBold'>😊</h1>
             </div>"; //comeback
@@ -75,9 +75,7 @@ print $result['parshaDeeper'];
     <!-- bottom footer -->
     <?php include "footer.php";?>
 
-
     </div>
-
 
 </body>
 
