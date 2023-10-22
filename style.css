@@ -478,7 +478,10 @@ input[type="radio"] {
 	justify-content: center;
 }
 
-ul.source{
-	list-style-type:square;
+ul.source {
+	list-style-type: square;
 }
 
+details>summary {
+	list-style-type: none;
+}
