@@ -27,7 +27,7 @@ use Zman\Zman;
 
 $today = new DateTime();
 $currentParsha = Zman::parse($today)->parshaHebrew;
-
+echo $currentParsha;
 switch ($currentParsha) {
     case $currentParsha: //this uses the variable to call the sql code below
         $stmt = $conn->prepare('SELECT parshaHebrew, parshaAbout, parshaDeeper FROM `parsha` WHERE parshaHebrew=?');
@@ -42,11 +42,11 @@ switch ($currentParsha) {
 $result = mysqli_fetch_array($parshaInfo);
 
 $parshaThisWeekBool = is_null($result);
-if ($parshaThisWeekBool == true) {
+if ($parshaThisWeekBool == false) {
     print "<div class='firstTop noParshaText'>
                 <h2 class='firstBold'>There is no Parsha this week because of Yontif!</h2>
                 <h1 class='firstBold'>😊</h1>
-            </div>"; //comeback
+            </div>";
 } else {?>
                 <div class="header2">
                     <h1 class="bigHeader2">
