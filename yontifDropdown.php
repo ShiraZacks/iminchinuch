@@ -1,7 +1,7 @@
 
 <?php
 //gets the selected yontif in variable named $SelectedYontif
-$SelectedYontif = ["ראש השנה", "צום גדליה", "יום כיפור"];
+$SelectedYontif = array("ראש השנה" => $roshHashana, "צום גדליה", "יום כיפור");
 
 foreach ($SelectedYontif as $Yontif) {
     $stmt = $conn->prepare('SELECT yontifHebrew, yontifAbout, yontifDeeper FROM `yontif` WHERE yontifHebrew=?');
@@ -13,9 +13,6 @@ foreach ($SelectedYontif as $Yontif) {
 }
 $result = mysqli_fetch_array($parshaInfo);
 ?>
-
-
-
 
                 <!-- get each one to call that sql section, put it in the below sections. -->
                 <div class="header2" id="header1">

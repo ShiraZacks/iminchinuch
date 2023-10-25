@@ -6,12 +6,12 @@
     <link rel="shortcut icon" type="image/jpeg" href="favcon.jpg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?= time() ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="toggleBars.js?<?=time()?>"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?<?= time() ?>">
-    <?php include 'menu.php'; ?>
+    <link rel="stylesheet" href="style.css?<?=time()?>">
+    <?php include 'menu.php';?>
 </head>
 
 <body>
@@ -32,48 +32,49 @@
             <div class='form' autocomplete="off">
                 <?php
 
-                $errors = [];
-                $errorMessage = '';
+$errors = [];
+$errorMessage = '';
 
-                if (!empty($_POST)) {
-                    $name = $_POST['name'];
-                    $email = $_POST['email'];
-                    $message = $_POST['message'];
+if (!empty($_POST)) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-                    if (empty($name)) {
-                        $errors[] = 'Name is empty';
-                    }
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
+    }
 
-                    if (empty($email)) {
-                        $errors[] = 'Email is empty';
-                    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $errors[] = 'Email is invalid';
-                    }
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
 
-                    if (empty($message)) {
-                        $errors[] = 'Message is empty';
-                    }
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
 
-                    if (empty($errors)) {
-                        $toEmail = 'misszacks@iminchinuch.org';
-                        $emailSubject = 'New email from your contact form';
-                        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
-                        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
-                        $body = join(PHP_EOL, $bodyParagraphs);
+    if (empty($errors)) {
+        $toEmail = 'misszacks@iminchinuch.org';
+        $emailSubject = 'New email from your contact form';
+        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $body = join(PHP_EOL, $bodyParagraphs);
 
-                        if (mail($toEmail, $emailSubject, $body, $headers))
+        if (mail($toEmail, $emailSubject, $body, $headers)) {
+            header('Location: thankYouForm.php');
+        }
 
-                            header('Location: thankYouForm.php');
-                    } else {
-                        $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at misszacks@iminchinuch.org';
-                    }
-                } else {
+    } else {
+        $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at misszacks@iminchinuch.org';
+    }
+} else {
 
-                    $allErrors = join('<br/>', $errors);
-                    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-                }
+    $allErrors = join('<br/>', $errors);
+    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+}
 
-                ?>
+?>
 
                 <form method="post" id="contact-form">
                     <h2>Contact me!</h2>
@@ -89,13 +90,6 @@
                     <p>
                         <label class="formLabel">Message:</label>
                         <textarea name="message" class="formInput"></textarea>
-                    </p>
-                    <p>
-                        <label class="formLabel formText">Do you want a response?</label><br />
-                        <label for="Yes" class="formLabel">Yes!</label>
-                        <input type="radio" name="response" value="Yes" class="formInput"><br />
-                        <label for="Yes" class="formLabel">Nope!</label>
-                        <input type="radio" name="response" value="No" class="formInput">
                     </p>
                     <p class="submitButton">
                         <input type="submit" value="Send" class="formSend buttonStyles" />
@@ -152,7 +146,7 @@
             </div>
 
             <!-- bottom footer -->
-            <?php include "footer.php"; ?>
+            <?php include "footer.php";?>
         </div>
 
 </body>

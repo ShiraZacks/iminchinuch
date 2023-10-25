@@ -10,7 +10,6 @@ echo ' <!-- Navbar  -->
             <a href="parsha.php" class="buttons">This Week\'s Parsha</a>
             <a href="month.php" class="buttons">This Month</a>
             <a href="yontif.php" class="buttons">Next Yom Tov</a>
-            <a href="quotes.php" class="buttons">Quote of the Day</a>
             <a href="geula.php" class="buttons">Bring the Geula</a>
             <a href="contact.php" class="buttons">Contact Me</a>
         </div>
@@ -22,7 +21,6 @@ echo ' <!-- Navbar  -->
                 <li><a href="parsha.php" class="button">This Week\'s Parsha</a> </li>
                 <li><a href="month.php" class="button">This Month</a></li>
                 <li><a href="yontif.php" class="button">Next Yom Tov</a></li>
-                <li><a href="quotes.php" class="button">Quote of the Day</a></li>
                 <li><a href="geula.php" class="button">Bring the Geula</a></li>
                 <li><a href="contact.php" class="button bottom">Contact Me</a></li>
                 </ul>

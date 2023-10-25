@@ -287,7 +287,7 @@ hr {
 
 .secondHeader {
 	float: left;
-	width: 66.66666%;
+	width: 80%;
 	padding: 0px 8px;
 }
 
@@ -475,8 +475,8 @@ input[type="radio"] {
 
 .yontifStyles {
 	display: flex;
-	width: 250px;
-	margin: 10px;
+	width: 80vw;
+	margin: 10px auto;
 	padding: 20px;
 	align-items: center;
 	justify-content: center;
