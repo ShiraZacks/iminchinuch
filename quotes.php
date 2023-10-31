@@ -11,21 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?<?=time()?>">
-    <?php include 'menu.php';?>
+    <?php
+include 'menu.php';
+include 'dbconnect.php';
+$grabQuote = mysqli_query($conn, 'SELECT `quote` FROM `quotes` WHERE `day` = DAYOFYEAR(CURRENT_DATE())') or die();
+$quote = mysqli_fetch_array($grabQuote);
+
+?>
 </head>
 
 <body>
     <div class="pageContainer">
         <div class="contentWrap">
 
-
-            <!-- First section of text -->
-
-
             <div class="header2">
-                <h1 class="bigHeader2">Send me your own Quote of the Day!</h1>
+                <h1 class="bigHeader2">Quote of the Day: <?php print $quote['quote'];?>.</h1>
+                <h1>Send me your own Quote of the Day!</h1>
             </div>
-
 
             <div class='form' autocomplete="off">
                 <?php
